@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/gs.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
     <title>Toluwanimi Ayoola</title>
 </head>
@@ -15,16 +16,43 @@
             <p id="role">Backend Developer</p>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="/index.html">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <div id="clear1"></div>
     </nav>
 
     <!-- Footer/Newsletter subscription -->
-    <footer id="footer">
-        <p>Click <a href="#">Here</a> to subscribe to my newsletters</p>
+    <footer id="footer" style="position: absolute;">
+        <!-- My social media tags -->
+        <section id="footersocials">  
+            <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/" target="_blank"><img src="/images/LinkedIn.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com/_Toluwa__" target="_blank"><img src="/images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/toluwanii.ao" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a>
+            <a href="https://github.com/ayoolat" target="_blank"><img src="/images/github.png" alt="github"></a>
+            <a href="ayoola_toluwanimi@yahoo.com" target="_blank"><img src="/images/email.png" alt="Email"></a>
+        </section>
+        <br>
+
+        <!-- site navigation links -->
+        <section id="footerlinks" style="margin-top: 20px;">
+            <a href="/index.html">Home</a>
+            <a href="/index.html">About</a>
+            <a href="/index.html">Projects</a>
+            <a href="/index.html">Contact</a>
+        </section>
+
+        <!-- Subscribe to my Newsletter -->
+
+        <section id="subscribe" style="margin: 15px 0 0 0;">
+            <p>Subscribe to my newsletters</p>
+            <form method="POST" data-netlify="true" name="newsletter">
+                <input type="email" name="email" placeholder="Email" style="margin-top: 5px;">
+                <input type="submit" name="Subscribe" value="Subscribe" id="subscribed">
+            </form>
+        </section>
     </footer>
 </body>
 </html>

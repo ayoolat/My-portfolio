@@ -1,3 +1,9 @@
+/* body, reset */
+.navbar{
+    position: relative;
+    top: 0;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -5,58 +11,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-
-/* nav bar here! */
-.navbar{
-    margin: 0;
-    padding: 0;
-    background: rgba(255,255,255,0);
-    overflow: auto;
-    position: fixed;
+h1, h2, p{
+    margin: 10px 10px;
+    padding: 10px 10px;
 }
 
-.navbar ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 40em;
-    float: right;
-    display: block;
-}
-
-.navbar li{
-    float: left;
-}
-
-.navbar li a{
-    text-decoration: none;
-    display: block;
-    padding: 16px 20px;
-    color: #073307;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.navbar li a:hover{
-    background-color: #d1d6d2;
-}
-
-#name{
-    font-size: 20px;
-    margin-top: 5px;
-}
-
-#role{
-    margin-top: -15px;
-    font-size: 12px;
-}
-
-#brand{
-    display: inline-block;
-    padding-left: 30px;
-    color: #073307;
-}
-/* nav bar end */
+/* My image */
 
 #image{
     max-height: 500px;
@@ -67,13 +27,23 @@ body{
 #image img{
     height: 500px;
     width: 100%;
-    /* background: url("/images/IMG_1083.JPG") fixed center no-repeat; */
-    /* background-size: cover; */
     align-content: center;
     border-radius: 47%;
-   }
+}
 
-#about, #skill, #socials{
+/* About(H1) */
+
+.about{
+    background-color: #517f56;
+    text-align: center;
+    font-size: 5em;
+    padding: 20px 0;
+    margin: 50px 0;
+}
+
+/* Summary(about), skills and socials divs */
+
+#summary, #skill, #socials{
     max-width: 40%;
     max-height: 50%;
     margin:20px auto;
@@ -82,22 +52,22 @@ body{
     padding: 0 20px;
     border-radius: 10px;
 }
+
+#summary p{
+    margin: 10px 30px;
+}
+
 #socials img{
     max-width: 10%;
     max-height: 20%;
-    float: left;
-    padding: 20px 40px 40px 40px;
+    float:  left;
+    display: block;
+    /* padding: 20px 40px 40px 40px; (Images seize to display when padding is added) */
     align-content: center;
-    /* padding-left: 80px; */
+    margin: 20px;
 }
 
-#clear{
-    clear: both;
-}
-
-.about{
-    background-color: #517f56;
-    text-align: center;
-    font-size: 5em;
-    padding: 20px 0;
+#skill ul{
+    margin: 5px 5px 10px 40px;
+    list-style-type: none;
 }

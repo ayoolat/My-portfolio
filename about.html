@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="/gs.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="about.html">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-     <!-- Navigation bar -->
+    <!-- Navigation bar -->
+
     <nav class="navbar">
         <div id="brand">
             <h1 id="name">Toluwanimi Ayoola</h1>
@@ -20,19 +23,21 @@
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
+        <div id="clear2"></div>
     </nav>
 
      <!-- image of myself -->
+
     <div id="image">
-        <img src="/images/IMG_0460.JPG" alt="esgzds">
+        <img src="/images/IMG_0460.JPG" alt="">
     </div>
 
-    <h1 class="about">About</h1>
+    <h2 class="about">About</h1>
 
     <!--  My summary  -->
 
-    <section id="about">
-        <h1>Toluwanimi</h1>
+    <section id="summary">
+        <h2>Toluwanimi</h1>
         <hr>
         <p> I'm a backend developer based in Abuja, Nigeria. I enjoy engaging in problem solving  and apply sophisticated designs to create quality product.</p>
     </section>
@@ -40,7 +45,7 @@
     <!--  My skill set summary  -->
 
     <section id="skill">
-        <h1>Skills</h1>
+        <h2>Skills</h1>
         <hr>
         <p>I am fluent with...</p>
         <ul>
@@ -56,7 +61,7 @@
     <!--  Social media directory  -->
 
     <section id="socials">
-        <h1>Social Networks</h1>
+        <h2>Social Networks</h1>
         <hr>
         <div>  
             <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/"><img src="/images/LinkedIn.png" alt="LinkedIn"></a>
@@ -73,7 +78,42 @@
         <div>
             <a href="ayoola_toluwanimi@yahoo.com"><img src="/images/email.png" alt="Email"></a>
         </div>
-        <div id="clear"></div>
+        <div id="clear1"></div>
     </section>
+
+    <!-- Link to my resume -->
+
+    <p id="resume">Click <a href="/images/mycv.pdf"> HERE </a>to view my resume</p>
+
+
+    <!-- Footer/Newsletter subscription -->
+    <footer id="footer">
+        <!-- My social media tags -->
+        <section id="footersocials">  
+            <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/" target="_blank"><img src="/images/LinkedIn.png" alt="LinkedIn"></a>
+            <a href="https://twitter.com/_Toluwa__" target="_blank"><img src="/images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com/toluwanii.ao" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a>
+            <a href="https://github.com/ayoolat" target="_blank"><img src="/images/github.png" alt="github"></a>
+            <a href="ayoola_toluwanimi@yahoo.com" target="_blank"><img src="/images/email.png" alt="Email"></a>
+        </section>
+        <br>
+        <!-- site navigation links -->
+        <section id="footerlinks">
+            <a href="/index.html">Home</a>
+            <a href="/index.html">About</a>
+            <a href="/index.html">Projects</a>
+            <a href="/index.html">Contact</a>
+        </section>
+        <br>
+        <!-- Subscribe to my Newsletter -->
+       
+        <section id="subscribe">
+            <p>Subscribe to my newsletters</p>
+            <form method="POST" data-netlify="true" name="newsletter">
+                <input type="email" name="email" placeholder="Email" style="margin-top: 5px;">
+                <input type="submit" name="Subscribe" value="Subscribe" id="subscribed">
+            </form>
+        </section>
+    </footer>
 </body>
 </html>
