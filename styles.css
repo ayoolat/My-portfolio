@@ -9,7 +9,7 @@ body{
 /* navbar */
 .navbar{
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     background: rgba(255,255,255,0);
     overflow: auto;
     position: fixed;
@@ -19,7 +19,7 @@ body{
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-left: 700px;
+    margin-left: 40em;
     float: right;
 }
 
