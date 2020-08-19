@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("/images/background3.jpg") no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* navbar */
+.navbar{
+    margin: 0;
+    padding: 0 10px;
+    background: rgba(255,255,255,0);
+    overflow: auto;
+    position: fixed;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 700px;
+    float: right;
+}
+
+.navbar li{
+    float: left;
+}
+
+.navbar li a{
+    text-decoration: none;
+    display: block;
+    padding: 16px 20px;
+    color: #073307;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.navbar li a:hover{
+    background-color: #d1d6d2;
+}
+
+#name{
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#role{
+    margin-top: -15px;
+    font-size: 12px;
+}
+
+#brand{
+    display: inline-block;
+    padding-left: 30px;
+    color: #073307;
+}
+/* nav bar end */
+
+/* footer */
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    color: white;
+}
+
+#footer a{
+    color: green;
+}
+
