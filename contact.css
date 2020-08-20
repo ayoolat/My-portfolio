@@ -1,0 +1,178 @@
+
+.navbar{
+    background-color: white ;
+}
+
+#body{
+    display: flex;
+    /* flex-direction: column; */
+}
+
+#footer{
+    background-color: white !important;
+    justify-self: start;
+    /* position: absolute;   */
+}
+
+#footer #subscribe p, #footer #footer1 #footerlinks a{
+    border-right: black solid 1px;
+    color: black;
+}
+
+#footer #subscribe .btn{
+    background-color: #073307;
+}
+
+body{
+    background-color: #073307;
+}
+
+#contactme{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#contact1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    height: 70vh;
+    width: 30vw;
+    align-self: center;
+    padding-left: 5rem;
+    background-color: whitesmoke;
+}
+
+#contact1 #img{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    height: 3rem;
+    width: 10rem;
+    justify-content: space-evenly;
+    justify-content: center;
+}
+
+#contact1 #img .img1{
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: yellowgreen;
+    justify-content: center;
+}
+
+#contact1 #img .img1 img{
+    margin-top: 0.7rem;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#contact1 h1, p{
+    color: #073307;
+}
+
+#contact2{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 70vh;
+    width: 30vw;
+    border-left: solid #073307 0.1rem;
+}
+
+#contact2 .contactform{
+display: flex;
+flex-direction: column;
+align-content: center;
+margin-left: 2rem;
+width: 80%;
+}
+
+#contact2 .contactform input{
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+
+#contact2 .contactform textarea{
+    margin: 0.5rem;
+}
+
+#contact2 .contactform #submit{
+    background-color: yellowgreen;
+    border: none;
+    border-radius: 5px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+@media(max-width:768px){
+    #contactme{
+        flex-direction: column;
+    }
+
+    #contact1{
+        height: 20vh;
+        justify-content: center;
+        padding-left: 1.5rem;
+        text-align: center;
+    }
+
+    #contact1 #img{
+        margin-top: 0;
+    }
+
+    #contact1 h1, #contact1 p{
+        padding-right: 1.5rem;
+    }
+
+    #contact2{
+        margin-top: 0.2rem;
+        height: 40vh;
+    }
+}
+
+@media(max-width:414px){
+    #contactme{
+        padding-top: 25rem;
+    }
+
+    #contact1{
+        height: 60vh;
+        width: 30vh;
+    }
+
+    #contact2{
+        height: 60vh;
+        width: 30vh;
+        margin-top: 0.3rem;
+    }
+
+    #contact1 #img{
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media(max-height:414px){
+    
+    #contact1{
+        margin-top: 20rem;
+        height: 40vh;
+    }
+
+    #contact2{
+        height: 90vh;
+        margin-top: 0.3rem;
+    }
+
+    #contact1 #img{
+        margin-bottom: 0.2rem;
+    }
+
+}

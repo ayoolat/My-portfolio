@@ -6,143 +6,177 @@
     text-decoration: none;
 }
 
-/* Tablet responsiveness */
-
-@media(max-device-width:768px){
-    .navbar li{
-        float: none;
-        text-align: left; 
-    }
-
-    .navbar ul{
-        display: block;
-        float: none;
-        margin-left: 0em;
-    }
-}
-
-/* navbar */
-.navbar{
-    background: rgba(255,255,255,0);
-    overflow: auto;
-    position: fixed;
-}
-
-.navbar ul{
-    list-style: none;
-    float: right;
-    margin-left: 40em;
-}
-
-.navbar li{
-    float: left;
-}
-
-.navbar li a{
-    display: block;
-    padding: 16px 20px;
-    color: #073307;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
-}
-
-.navbar li a:hover{
-    background-color: #d1d6d2;
-}
-
-
-#name{
-    font-size: 20px;
-    margin: 10px 5px;
+body{
+    margin: 0;
     padding: 0;
 }
 
-#role{
-    margin: -15px 0 0 7px;
-    font-size: 12px;
+/* Tablet responsiveness */
+
+
+/* navbar starts here */
+.navbar{
+    display: flex;
+    margin: 5px;
+    padding: 7px 0;
+    color: #073307;
+    margin: 0;
+    padding: 0;
+    background: rgba(255,255,255,0);
+    position: fixed;
+    width: 100vw;
 }
 
 #brand{
-    padding-left: 30px;
-    color: #073307;
-    float: left;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: nowrap; */
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    flex: 1; 
 }
 
-#clear1{
-    clear: left;
+.navbar #brand p, #brand h1{
+    padding: 0;
+    margin: 5px;
 }
 
-#clear2{
-    clear: right;
+.navbar #brand p{
+    padding-left: 25px;
 }
-/* nav bar end */
+
+.navbar #con{
+    display: flex;
+    list-style-type: none;
+    padding-right: 2rem;
+}
+
+.navbar #con li{
+    padding: 1.3rem;
+    font-size: 1.1rem;
+    /* flex-wrap: nowrap; */
+}
+
+.navbar #con li:hover{
+    background-color: #d1d6d2;
+}
+
+#con li a{
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+/* navbar ends here */
+
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER */
 
-#footer {
-    padding: 5px 0 150px 0;
-    position: relative;
-    bottom: 0;
-    /* top: 100%; */
-    width: 100%;
-    height: 2.5rem;
-    color: white;
+#footer{
+    display: flex;
+    height: 7rem;
     background-color: #073307;
-    margin: 0 auto;
-   
+    /* position: relative; */
+    /* bottom: 0; */
+    width: 100vw;
+    justify-content: center;
 }
 
-/* subscribe to my news letter styling */
+#footer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* flex: 2; */
+    margin-bottom: 3rem;
+    justify-self: flex-start;
+    border-left: solid white 0.01rem;
+    padding-left: 2rem;
+    margin: 1rem 2rem;
+}
 
-#footer p a{
-    color: black;
+#footer #footer1 #footersocials{
+    display: flex;
+    justify-content: center;
+}
+
+#footer #footer1 #footersocials img{
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 5px 10px 5px 5px;
+    margin: 5px 5px 20px 5px;
+}
+
+#footer #footer1 #footerlinks{
+    /* padding-left: 2rem; */
+    margin: 0;
+}
+
+#footer #footer1 #footerlinks a{
+    color: white;
+    border-right: white solid 1px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    padding: 0 1rem;
+}
+
+#footer #subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #footer #subscribe p{
-    padding: 10px 0 0 0;
-    margin: 0 0 0 0;
-    text-align: center;
-    font-size: 14px;
+     color: white;
+     font-weight: lighter;
+     font-size: 0.9rem;
+     margin: 0.2rem;
+     padding: 0.5rem 0;
+}
+
+#footer #subscribe #email{
+    padding: 0.3rem;
+}
+
+#footer #subscribe #form{
+    display: flex;
+    flex-direction: column;
+}
+
+#footer #subscribe .btn{
+    margin: 0;
+    padding: 0.3rem 0;
 }
 
 
-#footer #subscribe{
-    text-align: center;
-}
+@media(max-device-width:414px){
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar #con{
+       flex-direction: column;
+   }
 
-#footer #subscribe #subscribed{
-    padding: 0 5px;
-    color: #073307;
-}
+   .navbar #brand{
+       padding: 0;
+   }
 
-/* #footerlinks and #footersocials section template */
+   .navbar #brand p, .navbar #brand h1{
+       padding-left: 1rem;
+   }
 
-#footer #footerlinks, #footer #footersocials{
-    display: block;
-    padding: 5px 30px;
-    text-align: center;
-    margin: 5px auto;
-    color: white;
-    max-width: 60%;
-    max-height: 3%;
-}
+   #footer{
+       height: 40vh;
+       flex-direction: column;
+   }
 
-/* site navigation bar (#footerlinks) styling */
+   #footer #subscribe #form{
+       justify-content: center;
+   }
 
-#footer #footerlinks a{
-    margin: 20px 5px 5px 5px;
-    padding-right: 10px;
-    color: white;
-    border-right: white solid 1px;
-    font-size: 12px;
-}
+   #footer #subscribe #form #email, #footer #subscribe #form #email .btn{
+       justify-self: center;
+   }
 
-/* social media tags (#footersocials) styling */
-
-#footer #footersocials img{
-    height: 40px;
-    width: 40px;
-    padding: 5px 10px 5px 5px;
-    margin: 5px 5px 20px 5px;
+   #footer #footer1{
+       border-left: none;
+   }
 }

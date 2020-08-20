@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/gs.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <title>Toluwanimi Ayoola</title>
+    <link rel="stylesheet" href="/contact.css">
+    <title>Document</title>
 </head>
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar">
+    <nav class="navbar" style="background-color: white;">
         <div id="brand">
             <h1 id="name">Toluwanimi Ayoola</h1>
             <p id="role">Backend Developer</p>
@@ -23,8 +22,29 @@
         </ul>
     </nav>
 
-    <!-- Footer/Newsletter subscription -->
-    <footer id="footer" style="position: absolute; bottom: 0;">
+    <section id="contactme">
+        <div id="contact1">
+            <div id="img">
+                <div class="img1"><img src="/images/icons/linkedin.png" alt="linkedin" id="one"></div>
+                <div class="img1"><img src="/images/icons/twitter.png" alt="twitter" id="two"></div>
+                <div class="img1"><img src="/images/icons/instagram.png" alt="instagram" id="three"></div>
+            </div>
+            <h1>Contact Me!</h1>
+            <p>Fill in the form right here, and I'll get back to you!</p>
+        </div>
+        <div id="contact2">
+            <form action="" id="contacts" class="contactform">
+                <input type="name" name="name" placeholder="Name" id="name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="number" name="phonenum" id="number" placeholder="Phone Number">
+                <textarea name="message" id="message" rows="10" cols="10" placeholder="Type a message..."></textarea>
+                <input type="submit" name="Submit" id="submit">
+            </form>
+        </div>
+    </section>
+
+     <!-- Footer/Newsletter subscription -->
+    <footer id="footer" style="position: absolute;">
         <!-- Subscribe to my Newsletter -->
 
         <section id="subscribe">
@@ -56,5 +76,7 @@
 
         
     </footer>
+
+
 </body>
 </html>

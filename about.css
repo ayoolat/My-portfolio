@@ -1,8 +1,3 @@
-/* body, reset */
-.navbar{
-    position: relative;
-    top: 0;
-}
 
 body{
     margin: 0;
@@ -15,6 +10,7 @@ h1, h2, p{
     margin: 10px 10px;
     padding: 10px 10px;
 }
+
 
 /* My image */
 
@@ -31,8 +27,6 @@ h1, h2, p{
     border-radius: 47%;
 }
 
-/* About(H1) */
-
 .about{
     background-color: #517f56;
     text-align: center;
@@ -41,9 +35,147 @@ h1, h2, p{
     margin: 50px 0;
 }
 
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+#socials h2, #skill h2, #summary h2{
+    margin-left:5rem
+}
+
+hr{
+    margin: 0 1.5rem;
+}
+
+#summary{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40vw;
+    border: solid #aac1ae 1px;
+    border-radius: 5px;
+    height: 15rem;
+    margin: 1rem;
+    background-color: #d0f4d0;
+}
+
+#summary #summary1{
+    line-height: 1.5rem;
+    height: 100%;
+}
+
+#skill{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40vw;
+    border: solid #aac1ae 1px;
+    border-radius: 5px;
+    height: 19rem;
+    margin: 1rem;
+    background-color: #d0f4d0;
+}
+
+#skill #skills{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+    height: 100%;
+    font-size: 1.1rem;
+}
+
+#skill #skills ul{
+    display: flex;
+    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#skill #skills li{
+    margin: 0.7rem;
+    /* padding-left: 1rem; */
+}
+
+#socials{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40vw;
+    border: solid #aac1ae 1px;
+    border-radius: 5px;
+    height: 15rem;
+    margin: 1rem;
+    background-color: #d0f4d0;
+}
+
+#socials #soc-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#socials #soc-img img{
+    margin: 1rem;
+    max-width: 3rem;
+    max-height: 3rem;
+}
+
+
+@media(max-width:768px){
+    #socials{
+        height: 17rem;
+    }
+
+    #socials #soc-img{
+        flex-flow: row wrap;
+    }
+}
+
+@media(max-width:414px){
+    #image{
+        display: flex;
+        justify-content: center;
+        height: 40vh;
+        width: 100vw;
+    }
+
+    #image img{
+        height: 40vh;
+        width: 60vw;
+    }
+
+    #socials h2, #skill h2, #summary h2{
+        margin-left:2rem
+    }    
+
+    #skill, #socials, #summary{
+        height: 20rem;
+        width: 65vw;
+    }
+}
+
+@media(max-width:414px){
+    #socials{
+        height: 23rem;
+    }
+}
+
+
+
+    /* padding: 20px 40px 40px 40px; (Images seize to display when padding is added) */
+    /* align-content: center;
+    margin: 20px;
+}
+
+/* About(H1) */
+
+
+/*  */
+
 /* Summary(about), skills and socials divs */
 
-#summary, #skill, #socials{
+/* #summary, #skill, #socials{
     max-width: 40%;
     max-height: 50%;
     margin:20px auto;
@@ -61,13 +193,13 @@ h1, h2, p{
     max-width: 10%;
     max-height: 20%;
     float:  left;
-    display: block;
+    display: block; */
     /* padding: 20px 40px 40px 40px; (Images seize to display when padding is added) */
-    align-content: center;
+    /* align-content: center;
     margin: 20px;
 }
 
 #skill ul{
     margin: 5px 5px 10px 40px;
     list-style-type: none;
-}
+} */

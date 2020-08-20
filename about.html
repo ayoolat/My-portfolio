@@ -11,75 +11,86 @@
 </head>
 <body>
     <!-- Navigation bar -->
-
-    <nav class="navbar">
+    <nav class="navbar" style="position: relative; top: 0;">
         <div id="brand">
             <h1 id="name">Toluwanimi Ayoola</h1>
-            <p id="role">Backend Developer</p>
+            <p id="role" style="margin-top: -5px;">Backend Developer</p>
         </div>
-        <ul>
+        <ul id="con">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
-        <div id="clear2"></div>
-    </nav>
+    </nav>  
 
      <!-- image of myself -->
 
     <div id="image">
-        <img src="/images/IMG_0460.JPG" alt="">
+        <img src="/images/IMG_0460.JPG" alt="img">
     </div>
 
     <h2 class="about">About</h1>
 
-    <!--  My summary  -->
-
-    <section id="summary">
-        <h2>Toluwanimi</h1>
-        <hr>
-        <p> I'm a backend developer based in Abuja, Nigeria. I enjoy engaging in problem solving  and apply sophisticated designs to create quality product.</p>
-    </section>
-
-    <!--  My skill set summary  -->
-
-    <section id="skill">
-        <h2>Skills</h1>
-        <hr>
-        <p>I am fluent with...</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>vanilla JavaScript</li>
-            <li>Node JS</li>
-            <li>mongoDB</li>
-            <li>css frameworks</li>
-        </ul>
-    </section>
-
-    <!--  Social media directory  -->
-
-    <section id="socials">
-        <h2>Social Networks</h1>
-        <hr>
-        <div>  
-            <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/"><img src="/images/LinkedIn.png" alt="LinkedIn"></a>
-        </div>
-        <div>
-            <a href="https://twitter.com/_Toluwa__"><img src="/images/twitter.png" alt="Twitter"></a>
-        </div>
-        <div>
-            <a href="https://www.instagram.com/toluwanii.ao"><img src="/images/Instagram.png" alt="Instagram"></a>
-        </div>
-        <div>
-            <a href="https://github.com/ayoolat"><img src="/images/github.png" alt="github"></a>
-        </div>
-        <div>
-            <a href="ayoola_toluwanimi@yahoo.com"><img src="/images/email.png" alt="Email"></a>
-        </div>
-        <div id="clear1"></div>
-    </section>
+    <div id="main">
+      
+        <!--  My summary  -->
+        <section id="summary">
+            <div>
+                <h2>Toluwanimi</h2>
+            </div>
+            <hr>
+            <div id="summary1">
+            <p> I'm a backend developer based in Abuja, Nigeria. I enjoy engaging in problem solving  and apply sophisticated designs to create quality product.</p>
+            </div>
+        </section>
+    
+        <!--  My skill set summary  -->
+    
+        <section id="skill">
+            <div>
+                <h2>Skills</h2>
+            </div>
+            <hr>
+            <div id="skills">
+                <p>I am fluent with...</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>vanilla JavaScript</li>
+                    <li>Node JS</li>
+                    <li>mongoDB</li>
+                    <li>css frameworks</li>
+                </ul>
+            </div>
+        </section>
+    
+        <!--  Social media directory  -->
+    
+        <section id="socials">
+            <div>
+            <h2>Social Networks</h2>
+            </div>
+            <hr>
+          <div id="soc-img">
+            <div>  
+                <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/"><img src="/images/icons/LinkedIn.png" alt="LinkedIn"></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/_Toluwa__"><img src="/images/icons/twitter.png" alt="Twitter"></a>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/toluwanii.ao"><img src="/images/icons/instagram.png" alt="Instagram"></a>
+            </div>
+            <div>
+                <a href="https://github.com/ayoolat"><img src="/images/icons/github.png" alt="github"></a>
+            </div>
+            <div>
+                <a href="ayoola_toluwanimi@yahoo.com"><img src="/images/icons/mail.png" alt="Email"></a>
+            </div>
+          </div>
+        </section>
+    </div>
 
     <!-- Link to my resume -->
 
@@ -87,33 +98,37 @@
 
 
     <!-- Footer/Newsletter subscription -->
+
     <footer id="footer">
-        <!-- My social media tags -->
-        <section id="footersocials">  
-            <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/" target="_blank"><img src="/images/LinkedIn.png" alt="LinkedIn"></a>
-            <a href="https://twitter.com/_Toluwa__" target="_blank"><img src="/images/twitter.png" alt="Twitter"></a>
-            <a href="https://www.instagram.com/toluwanii.ao" target="_blank"><img src="/images/instagram.png" alt="Instagram"></a>
-            <a href="https://github.com/ayoolat" target="_blank"><img src="/images/github.png" alt="github"></a>
-            <a href="ayoola_toluwanimi@yahoo.com" target="_blank"><img src="/images/email.png" alt="Email"></a>
-        </section>
-        <br>
-        <!-- site navigation links -->
-        <section id="footerlinks">
-            <a href="/index.html">Home</a>
-            <a href="/index.html">About</a>
-            <a href="/index.html">Projects</a>
-            <a href="/index.html">Contact</a>
-        </section>
-        <br>
+
         <!-- Subscribe to my Newsletter -->
-       
+
         <section id="subscribe">
             <p>Subscribe to my newsletters</p>
-            <form method="POST" data-netlify="true" name="newsletter">
-                <input type="email" name="email" placeholder="Email" style="margin-top: 5px;">
-                <input type="submit" name="Subscribe" value="Subscribe" id="subscribed">
+            <form method="POST" data-netlify="true" name="newsletter" id="form">
+                <input type="email" name="email" placeholder="Email" id="email">
+                <br>
+                <input type="submit" name="Subscribe" value="Subscribe" id="subscribed" class="btn">
             </form>
         </section>
+        
+       <section id="footer1"> 
+                <!-- My social media tags -->
+            <section id="footersocials">  
+                <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/" target="_blank"><img src="/images/icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="https://twitter.com/_Toluwa__" target="_blank"><img src="/images/icons/twitter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/toluwanii.ao" target="_blank"><img src="/images/icons/instagram.png" alt="Instagram"></a>
+                <a href="https://github.com/ayoolat" target="_blank"><img src="/images/icons/github.png" alt="github"></a>
+                <a href="ayoola_toluwanimi@yahoo.com" target="_blank"><img src="/images/icons/mail.png" alt="Email"></a>
+            </section>
+            <!-- site navigation links -->
+            <section id="footerlinks">
+                <a href="/index.html">Home</a>
+                <a href="/index.html">About</a>
+                <a href="/index.html">Projects</a>
+                <a href="/index.html">Contact</a>
+            </section>
+       </section>
     </footer>
 </body>
 </html>
