@@ -212,7 +212,11 @@ width: 80%;
 /* ======================================================================================= */
 
 @media(max-height:414px){
-    
+    /* changed navbabr position for asthetics */
+     .navbar{
+        position: static;
+    }
+
     /* resizing and aligning */
     #contactme{
         margin-top: 0;
