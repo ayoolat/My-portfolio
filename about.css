@@ -146,6 +146,7 @@ hr{
 /* =============================================================================================== */
 
 @media(max-width:414px){
+    /* changed navbabr position for asthetics */
     .navbar{
         position: static;
     }
