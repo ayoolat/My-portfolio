@@ -1,17 +1,30 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================================================================== */
+
+/* ******************************   DESKTOP VIEW   *********************************** */
+
+/* ==================================================================================== */
+
+/* Changed the navbar color for better asthetics and visibility */
 .navbar{
     background-color: white ;
 }
 
-#body{
-    display: flex;
-    /* flex-direction: column; */
-}
-
+/* Changed the footer and footer items color for better asthetics and visibility */
 #footer{
-    background-color: white !important;
-    justify-self: start;
-    /* position: absolute;   */
+    background-color: white;
 }
 
 #footer #subscribe p, #footer #footer1 #footerlinks a{
@@ -23,69 +36,80 @@
     background-color: #073307;
 }
 
+/* contact me page details start here */
 body{
     background-color: #073307;
 }
 
+/* main contact div */
 #contactme{
-    height: 100vh;
+    margin-top: auto;
     display: flex;
     justify-content: center;
     margin-bottom: 3rem;
 }
 
-#contact1{
+/* Template for both sides of contact divs */
+#contact1, #contact2{
     display: flex;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 7rem;
     height: 70vh;
     width: 30vw;
     align-self: center;
-    padding-left: 5rem;
+    align-content: center;
+    justify-content: center;
     background-color: whitesmoke;
 }
 
+/* Left side of contact divs */
+#contact1{
+    padding-left: 5rem;
+}
+
+/* Social media icon container */
 #contact1 #img{
     margin-top: 1.5rem;
     margin-bottom: 2rem;
     display: flex;
-    height: 3rem;
-    width: 10rem;
-    justify-content: space-evenly;
+    height: 4rem;
+    width: 12rem;
     justify-content: center;
+    justify-content: space-evenly;
+    align-content: center;
 }
 
+/*social media icon circles */
 #contact1 #img .img1{
     display: flex;
-    height: 3rem;
-    width: 3rem;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     background-color: yellowgreen;
     justify-content: center;
 }
 
+/* Social media icons */
 #contact1 #img .img1 img{
     margin-top: 0.7rem;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#contact1 h1{
+    font-size: 2rem;
 }
 
 #contact1 h1, p{
     color: #073307;
 }
 
+/* right side of contact divs */
 #contact2{
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
-    background-color: whitesmoke;
-    height: 70vh;
-    width: 30vw;
     border-left: solid #073307 0.1rem;
 }
 
+/* contact form */
 #contact2 .contactform{
 display: flex;
 flex-direction: column;
@@ -94,6 +118,7 @@ margin-left: 2rem;
 width: 80%;
 }
 
+/* name, email and phone number inputs */
 #contact2 .contactform input{
     margin: 0.5rem;
     padding: 0.2rem;
@@ -112,11 +137,19 @@ width: 80%;
     font-size: 1rem;
 }
 
+/* ====================================================================================== */
+
+/* *************************** TABLET RESPONSIVENESS ************************************* */
+
+/* ======================================================================================= */
+
 @media(max-width:768px){
+    /* main contact me divs moves from row to column */
     #contactme{
         flex-direction: column;
     }
 
+    /* Resizing top half div (left side) */
     #contact1{
         height: 20vh;
         justify-content: center;
@@ -124,6 +157,7 @@ width: 80%;
         text-align: center;
     }
 
+    /* resizing (shrinking) icons and texts */
     #contact1 #img{
         margin-top: 0;
     }
@@ -138,19 +172,31 @@ width: 80%;
     }
 }
 
+/* ====================================================================================== */
+
+/* *************************** PHONE RESPONSIVENESS ************************************* */
+
+/* ======================================================================================= */
+
 @media(max-width:414px){
+    /* changed navbabr position for asthetics */
+    .navbar{
+        position: static;
+    }
+
+    /* resizing and aligning */
     #contactme{
-        padding-top: 25rem;
+        padding-top: 1rem;
     }
 
     #contact1{
-        height: 60vh;
-        width: 30vh;
+        height: 50vh;
+        width: 40vh;
     }
 
     #contact2{
         height: 60vh;
-        width: 30vh;
+        width: 40vh;
         margin-top: 0.3rem;
     }
 
@@ -159,16 +205,32 @@ width: 80%;
     }
 }
 
+/* ====================================================================================== */
+
+/* *************************** PHONE RESPONSIVENESS ( PORTRIATE) ****************************** */
+
+/* ======================================================================================= */
+
 @media(max-height:414px){
     
+    /* resizing and aligning */
+    #contactme{
+        margin-top: 0;
+        padding: 0;
+    }
+
     #contact1{
-        margin-top: 20rem;
+        margin-top: 5rem;
         height: 40vh;
     }
 
     #contact2{
         height: 90vh;
         margin-top: 0.3rem;
+    }
+
+    #contact2 .contactform{
+        margin-left: 24px;
     }
 
     #contact1 #img{

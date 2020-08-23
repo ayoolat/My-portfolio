@@ -1,4 +1,4 @@
-
+/* css reset */
 body{
     margin: 0;
     padding: 0;
@@ -11,22 +11,29 @@ h1, h2, p{
     padding: 10px 10px;
 }
 
+/* ================================================================================== */
 
-/* My image */
+/* ******************************   DESKTOP VIEW   *********************************** */
 
+/* ==================================================================================== */
+
+/* Image of self divs */
 #image{
-    max-height: 500px;
-    max-width: 50%;
-    margin: 30px auto;
+    height: 80vh;
+    width: 50vw;
+    padding-top: 20px;
+    margin: 0 auto;
 }  
 
 #image img{
-    height: 500px;
-    width: 100%;
+    height: 80vh;
+    width: 40vw;
     align-content: center;
     border-radius: 47%;
+    padding-top: 30px;
 }
 
+/* Banner that states "About" */
 .about{
     background-color: #517f56;
     text-align: center;
@@ -35,9 +42,21 @@ h1, h2, p{
     margin: 50px 0;
 }
 
+/* main div containing major contents of page content (summary, social media etc) */
 #main{
     display: flex;
     flex-direction: column;
+}
+
+/* Template for each id's divs, headers etc */
+#summary, #skill, #socials{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 40vw;
+    border: solid #aac1ae 1px;
+    border-radius: 5px;
+    background-color: #d0f4d0;
 }
 
 #socials h2, #skill h2, #summary h2{
@@ -48,16 +67,10 @@ hr{
     margin: 0 1.5rem;
 }
 
+/* summary div */
 #summary{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 40vw;
-    border: solid #aac1ae 1px;
-    border-radius: 5px;
     height: 15rem;
     margin: 1rem;
-    background-color: #d0f4d0;
 }
 
 #summary #summary1{
@@ -65,16 +78,10 @@ hr{
     height: 100%;
 }
 
+/* Skills div */
 #skill{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 40vw;
-    border: solid #aac1ae 1px;
-    border-radius: 5px;
     height: 19rem;
     margin: 1rem;
-    background-color: #d0f4d0;
 }
 
 #skill #skills{
@@ -97,16 +104,10 @@ hr{
     /* padding-left: 1rem; */
 }
 
+/* Social media and icons div */
 #socials{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    width: 40vw;
-    border: solid #aac1ae 1px;
-    border-radius: 5px;
     height: 15rem;
     margin: 1rem;
-    background-color: #d0f4d0;
 }
 
 #socials #soc-img{
@@ -121,8 +122,14 @@ hr{
     max-height: 3rem;
 }
 
+/* ====================================================================================== */
+
+/* *************************** TABLET RESPONSIVENESS ************************************* */
+
+/* ======================================================================================== */
 
 @media(max-width:768px){
+
     #socials{
         height: 17rem;
     }
@@ -132,7 +139,17 @@ hr{
     }
 }
 
+/* ============================================================================================= */
+
+/* ****************************** PHONE VIEW PORTRIAT VIEW ************************************** */
+
+/* =============================================================================================== */
+
 @media(max-width:414px){
+    .navbar{
+        position: static;
+    }
+    /* resizing self image and div*/
     #image{
         display: flex;
         justify-content: center;
@@ -145,61 +162,17 @@ hr{
         width: 60vw;
     }
 
+    /* realignments */
     #socials h2, #skill h2, #summary h2{
         margin-left:2rem
     }    
 
-    #skill, #socials, #summary{
+    #skill, #summary{
         height: 20rem;
         width: 65vw;
     }
-}
 
-@media(max-width:414px){
     #socials{
-        height: 23rem;
+        width: 65vw;
     }
 }
-
-
-
-    /* padding: 20px 40px 40px 40px; (Images seize to display when padding is added) */
-    /* align-content: center;
-    margin: 20px;
-}
-
-/* About(H1) */
-
-
-/*  */
-
-/* Summary(about), skills and socials divs */
-
-/* #summary, #skill, #socials{
-    max-width: 40%;
-    max-height: 50%;
-    margin:20px auto;
-    border: #cad8c9 2px solid;
-    background-color: #e4f2e3;
-    padding: 0 20px;
-    border-radius: 10px;
-}
-
-#summary p{
-    margin: 10px 30px;
-}
-
-#socials img{
-    max-width: 10%;
-    max-height: 20%;
-    float:  left;
-    display: block; */
-    /* padding: 20px 40px 40px 40px; (Images seize to display when padding is added) */
-    /* align-content: center;
-    margin: 20px;
-}
-
-#skill ul{
-    margin: 5px 5px 10px 40px;
-    list-style-type: none;
-} */
