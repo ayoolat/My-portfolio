@@ -29,7 +29,7 @@ body{
     padding: 0;
     background: rgba(255,255,255,0);
     position: fixed;
-    width: 100vw;
+    max-width: 1440px;
 }
 
 /* Name and job role div */
@@ -91,6 +91,7 @@ body{
     width: 100vw;
     /*  FOOTER HAS POSITION: ABSOLUTE WITH BOTTOM: 0 STYLE, INLINE ON THE INDEX HTML */
     justify-content: center;
+    max-width: 1440px;
 }
 
 /* Social Media icons/links and navbar links (home, about, etc) DIV */
