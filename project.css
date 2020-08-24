@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+:root{
+    --font-color: #073307;
+    --backround-color: rgb(219, 221, 220);
+}
+
+
+/* ================================================================================== */
+
+/* ******************************   DESKTOP VIEW   *********************************** */
+
+/* ==================================================================================== */
+
+
+/* body container specification for standard laptop screen size and above */
+.container-main{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--backround-color);
+}
+
+/* container (for better asthetics to keep the contents away from the edge) */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* increased the font, changed thr color and added a margin */
+#heading{
+    color: var(--font-color);
+    font-size: 50px;
+    border-bottom: solid var(--font-color) 1px;
+    margin-bottom: 30px;
+}
+
+/* container holding project cards */
+.container-divs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* template for each project card */
+.cards{
+    overflow: hidden;
+    width: 30%;
+    height: 60vh;
+    margin: 20px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+}
+
+/* image resizing */
+.cards img{
+    width: 100%;
+    height: 200px;
+}
+
+hr{
+    margin: 0 20px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+}
+
+/* changed font-size and color for all texts (h1 and h3) */
+.cards h1, .cards p{
+    text-align: center;
+    margin: 5px;
+    color: var(--font-color);
+    line-height: 1.5;
+}
+
+.cards p{
+    padding-bottom: 20px;
+}
+
+
+/* ====================================================================================== */
+
+/* *************************** TABLET RESPONSIVENESS ************************************* */
+
+/* ======================================================================================== */
+
+
+@media(max-width:768px){
+    .container-main{
+        max-width: 768px;
+    }
+
+    .cards{
+        width: 70%;
+        height: 40%;
+    }
+    
+}
+
+
+/* ====================================================================================== */
+
+/* *************************** PHONE RESPONSIVENESS ************************************* */
+
+/* ======================================================================================== */
+
+@media(max-width:414px){
+    .container-main{
+        max-width: 414px;
+    }
+
+    .cards{
+        width: 70%;
+        height: 30%;
+    }
+    
+}

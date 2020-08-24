@@ -1,11 +1,102 @@
+h1, h2, p{
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+
+:root{
+    --font-color: #073307;
+}
+
 body{
-    background: url("/images/background3.jpg") no-repeat center fixed;
+    background: url("/images/background3.jpg") no-repeat center center/cover;
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
     line-height: 1em;
 }
 
-h1, h2, p{
-    margin: 10px 10px;
-    padding: 10px 10px;
+/* dext */
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin:0 auto;
+}
+
+.container2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.content h1, .content h3{
+    color: var(--font-color);
+    text-shadow: 5px 5px 20px (0,0,0,0.5);
+}
+
+.content h1{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.content h3{
+    font-size: 17px;
+}
+
+.content .btn{
+    align-self: center;
+    margin: 20px;
+    padding: 20px;
+    width: 40%;
+    font-size: 25px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--font-color);
+}
+
+.content a{
+    color: whitesmoke;
+}
+
+.btn:hover{
+    transform: rotate(5deg);
+}
+
+/* .content::before{
+    content: "";
+    background: url("/images/background3.jpg") no-repeat center center/cover;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+} */
+
+@media(max-width:414px){
+    .content h1{
+        font-size: 33px;
+    }
+    
+    .content h3{
+        font-size: 12px;
+    }
+
+    .content .btn{
+        width: 45%;
+        font-size: 20px;
+        
+    }
+    
 }
