@@ -1,3 +1,4 @@
+/* reset body */
 h1, h2, p{
     margin: 10px 10px;
     padding: 10px 10px;
@@ -7,6 +8,7 @@ h1, h2, p{
     --font-color: #073307;
 }
 
+/* body styling and body image formatting */
 body{
     background: url("/images/background3.jpg") no-repeat center center/cover;
     background-size: cover;
@@ -14,7 +16,15 @@ body{
     line-height: 1em;
 }
 
-/* dext */
+
+/* ================================================================================== */
+
+/* ******************************   DESKTOP VIEW   *********************************** */
+
+/* ==================================================================================== */
+
+
+/* body container specification for standard laptop screen size and above */
 .container{
     display: flex;
     flex-direction: column;
@@ -22,6 +32,7 @@ body{
     margin:0 auto;
 }
 
+/* centered the text on the body */
 .container2{
     height: 100vh;
     display: flex;
@@ -35,15 +46,16 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    text-align: center;
-    
+    text-align: center; 
 }
 
+/* Added a shadow to the text and changed font color */
 .content h1, .content h3{
     color: var(--font-color);
     text-shadow: 5px 5px 20px (0,0,0,0.5);
 }
 
+/* Enlarged the texts for asthetics */
 .content h1{
     font-size: 55px;
     margin-bottom: 20px;
@@ -53,6 +65,7 @@ body{
     font-size: 17px;
 }
 
+/* styled the button, made it larger and rounded the edges */
 .content .btn{
     align-self: center;
     margin: 20px;
@@ -64,10 +77,12 @@ body{
     background-color: var(--font-color);
 }
 
+/* changed the color of the text in the button */
 .content a{
     color: whitesmoke;
 }
 
+/* little animation when you hover ;) */
 .btn:hover{
     transform: rotate(5deg);
 }
@@ -84,7 +99,15 @@ body{
     z-index: 1;
 } */
 
+
+/* ====================================================================================== */
+
+/* *************************** PHONE RESPONSIVENESS ************************************* */
+
+/* ======================================================================================== */
+
 @media(max-width:414px){
+    /* reduced the size of all the texts */
     .content h1{
         font-size: 33px;
     }

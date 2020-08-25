@@ -54,9 +54,10 @@ h1, h2, p{
     flex-direction: column;
     align-self: center;
     width: 40vw;
-    border: solid #aac1ae 1px;
+    /* border: solid #aac1ae 1px; */
     border-radius: 5px;
     background-color: #d0f4d0;
+    box-shadow: 10px 10px 30px rgba(0, 0,0, 0.3);
 }
 
 #socials h2, #skill h2, #summary h2{
