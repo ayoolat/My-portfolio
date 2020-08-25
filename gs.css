@@ -89,7 +89,7 @@ body{
 /* Main footer div */
 #footer{
     display: flex;
-    height: 7rem;
+    height: rem;
     background-color: #073307;
     width: 100vw;
     /*  FOOTER HAS POSITION: ABSOLUTE WITH BOTTOM: 0 STYLE, INLINE ON THE INDEX HTML */
@@ -203,7 +203,7 @@ body{
 
     /* Footer divs move from row to column */
    #footer{
-       height: 30vh;
+       height: 35vh;
        flex-direction: column;
    }
 
@@ -224,7 +224,7 @@ body{
     }
 }
 
-@media(max-width: 414px){
+@media(max-width: 425px){
     .con{
         max-width: 414px;
     }
