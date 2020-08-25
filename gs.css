@@ -204,7 +204,12 @@ body{
     /* Footer divs move from row to column */
    #footer{
        height: 35vh;
+       width: 768px;
        flex-direction: column;
+   }
+
+   .footer1{
+       width: 100%;
    }
 
    /* Aligning and resizing */
@@ -226,7 +231,12 @@ body{
 
 @media(max-width: 425px){
     .con{
-        max-width: 414px;
+        max-width: 425px;
+    }
+
+    #footer{
+        height: 40vh;
+        max-width: 425px;
     }
 }
 
@@ -243,6 +253,7 @@ body{
     /* shrink footer height */
     #footer{
         height: 60vh;
+        width: 414px;
     }
 
     /* realignment */

@@ -65,6 +65,10 @@ body{
     font-size: 17px;
 }
 
+.content p, .content p a{
+    margin: 0;
+}
+
 /* styled the button, made it larger and rounded the edges */
 .content .btn{
     align-self: center;
