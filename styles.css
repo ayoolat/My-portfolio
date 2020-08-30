@@ -33,8 +33,6 @@ body{
     background-color: rgba(255, 255, 255, 0);
     /* remove box shadow */
     box-shadow: none;
-    /* for use of translateY */
-    /* position: relative; */
     /* hide the menu above the screen by default */
     transform: translateY(-100vh);
     /* transition adds a little animation when sliding in and out the menu */
@@ -193,7 +191,10 @@ hr{
     line-height: 1.5rem;
     text-align: center;
     height: 100%;
+}
 
+#summary #summary1 p{
+    padding: 0 40px;
 }
 
 /* Skills div */
@@ -286,8 +287,8 @@ hr{
     margin-bottom: -50px;
 }
 
+/* mansory container */
 .memories{
-    /* height: 100vh; */
     width: 100%;
     padding:40px;
 }
@@ -300,6 +301,7 @@ hr{
     margin: 20px 0 40px 0;
 }
 
+/* mansonry grid box */
 .memories .mansory-grid{
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -308,15 +310,18 @@ hr{
     row-gap: 5px;
 }
 
+/* make image take out 100% of allocated space */
 .memories .mansory-grid .mansory{
     height: 100%;
     width: 100%;
 }
 
+/* first element takes up 2 slots in a column */
 .memories .mansory-grid .mansory:first-child{
     grid-column: 1/span 2;
 }
 
+/* third element takes up 2 slots in a column and row */
 .memories .mansory-grid .mansory:nth-child(3){
     grid-column: 4/span 2;
     grid-row: 1/span 2;
