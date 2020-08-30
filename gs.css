@@ -82,8 +82,6 @@ body{
 .nav-con{
     max-width: 1440px; 
     /* position: sticky; */
-    /* right: 0; */
-    /* display: flex;  */
     margin: 0 auto; 
 }
 
@@ -263,6 +261,9 @@ body{
 */
 
 @media(max-device-width:768px){
+    .ham-con{
+        max-width: 768px;
+    }
     /* shows hamburger menu */
     .ham{
         visibility: visible;
@@ -338,6 +339,10 @@ body{
 */
 
 @media(max-width: 425px){
+    .ham-con{
+        max-width: 425px;
+    }
+
     .con{
         max-width: 425px;
     }
@@ -354,6 +359,9 @@ body{
 */
 
 @media(max-width:393px){
+    .ham-con{
+        max-width: 393px;
+    }
 
     #footer{
         max-width: 425px;
