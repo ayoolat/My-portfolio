@@ -11,24 +11,27 @@ h1, h2, p{
     padding: 10px 10px;
 }
 
-/* ================================================================================== */
-
-/* ******************************   DESKTOP VIEW   *********************************** */
-
-/* ==================================================================================== */
-
+/*  
+====================================================================================
+*************************** Body starts here (1440px)  ***************************** 
+====================================================================================
+*/
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
 /* Image of self divs */
 #image{
-    height: 80vh;
-    width: 50vw;
-    padding-top: 20px;
+    height: 70%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
 }  
 
 #image img{
-    height: 80vh;
-    width: 40vw;
-    align-content: center;
+    height:80%;
+    width: 70%;
     border-radius: 47%;
     padding-top: 30px;
 }
@@ -39,7 +42,7 @@ h1, h2, p{
     text-align: center;
     font-size: 5em;
     padding: 20px 0;
-    margin: 50px 0;
+    margin: 40px 0;
 }
 
 /* main div containing major contents of page content (summary, social media etc) */
@@ -53,11 +56,13 @@ h1, h2, p{
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 60vw;
-    /* border: solid #aac1ae 1px; */
+    width: 80%;
     border-radius: 5px;
     background-color: #d0f4d0;
     box-shadow: 10px 10px 30px rgba(0, 0,0, 0.3);
+    white-space: wrap;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 #socials h2, #skill h2, #summary h2{
@@ -84,16 +89,13 @@ hr{
 
 /* Skills div */
 #skill{
-    height: 15rem;
     margin: 1rem;
 }
 
 #skill #skills{
     display: flex;
     flex-direction: column;
-    line-height: 1.5rem;
     height: 100%;
-    font-size: 1.1rem;
 }
 
 #skill #skills ul{
@@ -105,12 +107,10 @@ hr{
 
 #skill #skills li{
     margin: 0.7rem;
-    /* padding-left: 1rem; */
 }
 
 /* Social media and icons div */
 #socials{
-    height: 15rem;
     margin: 1rem;
 }
 
@@ -126,77 +126,26 @@ hr{
     max-height: 3rem;
 }
 
-.test-con{
-    display: flex;
-    flex-direction: column;
-    padding: 20px 30px 70px 30px;
-    background-color: #dfe2de;
-}
-
-#heading{
-    margin: 3px;
-    padding: 3px;
-    font-size: 35px;
-    align-self: center;
-}
-
-#para{
-    align-self: center;
-    margin: 3px;
-    padding: 5px 10px 40px 10px;
-    text-align: center;
-}
-
-.test-con2{
-    display: flex;
-    justify-content: space-around;
-}
-
-.test-con2 .testimony {
-    display: flex;
-    flex-direction: column;
-}
-
-.test-con2 .testimony .testimonies{
-    width: 20vw;
-    border: solid #9fa39f 1px;
-}
-
-.test-con2 .testimony .testimonies{
-    padding: 50px 20px 20px 20px;
-    text-align: center;
-}
-
-.test-con2 .testimony .testimonies :first-child{
-    padding-bottom: 40px;
-}
-
-.test-con2 .testimony .testimonies p{
-    margin-top: 0;
-    padding-top: 0;
-}
-
-.test-con2 .testimony .testimonies span{
-    font-size: 2.5rem;
-    font-weight: bolder;
-}
-
-.test-con2 div .imgs{
-    width: 7vw;
-    align-self: center;
-    background-color: yellowgreen;
-    border-radius: 45%;
-    border: solid #9fa39f 1px;
-    padding: 10px;
-    margin-bottom: -50px;
-}
-/* ====================================================================================== */
-
-/* *************************** TABLET RESPONSIVENESS ************************************* */
-
-/* ======================================================================================== */
+/*  
+====================================================================================
+*************************** RESPONSIVENESS (768PX)  ******************************** 
+====================================================================================
+*/
 
 @media(max-width:768px){
+
+    #image{
+        height: 80%;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }  
+    
+    #image img{
+        height: 90%;
+        width: 90%;
+        border-radius: 47%;
+    }
 
     #socials{
         height: 17rem;
@@ -206,34 +155,16 @@ hr{
         flex-flow: row wrap;
     }
 
-    .test-con2 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .test-con2 .testimony .testimonies{
-        width: 50vw;
-    }
-
-    .test-con2 div .imgs{
-        width: 11vw;
-    }
-
-    .test-con2 .testimony .testimonies{
-        margin-bottom: 60px;
-        text-align: center;
-    }
-    
 }
 
-/* ============================================================================================= */
-
-/* ****************************** PHONE RESPONSIVENESS ************************************** */
-
-/* =============================================================================================== */
+/*  
+====================================================================================
+***************************** RESPONSIVENESS (425px)  ****************************** 
+====================================================================================
+*/
 
 @media(max-width:425px){
-    /* changed navbabr position for asthetics */
+    /* changed navbar position for asthetics */
     .navbar{
         position: static;
     }
@@ -264,20 +195,30 @@ hr{
         width: 65vw;
     }
 
-    .test-con2 div .imgs{
-        width: 19vw;
-    }
 }
 
-/* ============================================================================================= */
+/*  
+====================================================================================
+*************************** rESPONSIVENESS (393px)  ***************************** 
+====================================================================================
+*/
+@media(max-width:393px){
+    #socials #soc-img img{
+        margin: 1rem;
+        max-width: 2rem;
+        max-height: 2rem;
+    }
 
-/* ****************************** PHONE VIEW PORTRIAT VIEW ************************************** */
+    #summary, #skill, #socials{
+        font-size: 0.7rem;
+        line-height: 0.7rem;
+    }
 
-/* =============================================================================================== */
+    .about{
+        font-size: 4Rem;
+    }
 
-@media(max-height:414px){
-     /* changed navbabr position for asthetics */
-     .navbar{
-        position: static;
+    #heading{
+        font-size: 25px;
     }
 }

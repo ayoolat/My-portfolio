@@ -1,38 +1,81 @@
-/* reset body */
+/* remove margin on all h1's p's and h2's*/
 h1, h2, p{
     margin: 10px 10px;
     padding: 10px 10px;
 }
 
+/* add margin and padding to width */
+*{
+    box-sizing: border-box;
+}
+
+/* body reset */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(238, 247, 237, 0.7);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* using css variables to add font color */
 :root{
     --font-color: #073307;
 }
 
-/* body styling and body image formatting */
-body{
-    background: url("/images/background3.jpg") no-repeat center center/cover;
-    background-size: cover;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1em;
+/* display hamburger menu */
+.ham {
+    visibility: visible;
+}
+
+/* Navbar here */
+.navbar{
+    /* make navbar transparent */
+    background-color: rgba(255, 255, 255, 0);
+    /* remove box shadow */
+    box-shadow: none;
+    /* for use of translateY */
+    /* position: relative; */
+    /* hide the menu above the screen by default */
+    transform: translateY(-100vh);
+    /* transition adds a little animation when sliding in and out the menu */
+    transition: transform 0.2s ease;
+}
+    /* to add restore navbar height when class is added */
+.showNav {
+    transform: translateY(0);
 }
 
 
-/* ================================================================================== */
 
-/* ******************************   DESKTOP VIEW   *********************************** */
+/*  
+====================================================================================
+*************************** Body starts here (1440px)  ***************************** 
+====================================================================================
+*/
 
-/* ==================================================================================== */
-
-
-/* body container specification for standard laptop screen size and above */
-.container{
-    display: flex;
-    flex-direction: column;
+/* container to hold content in page on lager screen */
+.width{
     max-width: 1440px;
     margin:0 auto;
 }
 
-/* centered the text on the body */
+/* container keeps all contents centered */
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+/* background image here */
+.section1{
+    width: 100%;
+    height: 100vh;
+    background: url("/images/background3.jpg") no-repeat center center/cover;
+    background-size: cover;
+}
+
+/* centered the text on the home page */
 .container2{
     height: 100vh;
     display: flex;
@@ -74,7 +117,7 @@ body{
     font-size:20px;
 }
 
-/* styled the button, made it larger and rounded the edges */
+/* styled and enlarged and rounds edges */
 .content .btn{
     align-self: center;
     margin: 20px;
@@ -96,39 +139,308 @@ body{
     transform: rotate(5deg);
 }
 
-/* .content::before{
-    content: "";
-    background: url("/images/background3.jpg") no-repeat center center/cover;
-    opacity: 0.2;
-    position: absolute;
-    top: 0;
-    left: 0;
+/* what do I do section */
+.section2{
     width: 100%;
+}
+/* name, role and skills container */
+.sub-section2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+/* What I do banner */
+.about{
+    background-color: var(--font-color);
+    color: white;
+    text-align: center;
+    font-size: 5em;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+/* Template for each id's divs, headers etc */
+#summary, #skill{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: var(--font-color);
+    box-shadow: 10px 10px 30px rgba(0, 0,0, 0.3);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    margin: 20px 0 20px 0;
+}
+
+
+hr{
+    margin: 0 1.5rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+
+/* summary div */
+#summary:not(hr){
+    padding: 10px;
+}
+
+#summary #summary1{
+    line-height: 1.5rem;
+    text-align: center;
     height: 100%;
-    z-index: 1;
-} */
 
+}
 
-/* ====================================================================================== */
+/* Skills div */
+#skill #skills{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 
-/* *************************** PHONE RESPONSIVENESS ************************************* */
+#skill #skills ul{
+    display: flex;
+    list-style-type: none;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 
-/* ======================================================================================== */
+#skill #skills li{
+    margin: 0.7rem;
+}
 
-@media(max-width:414px){
-    /* reduced the size of all the texts */
+/* Testimonials */
+.test-con{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 70px 0;
+    background-color: #dfe2de;
+    margin-top: 40px;
+}
+
+/* Testimoinal heading and paragraph beneath */
+#heading{
+    margin: 3px;
+    padding: 3px;
+    font-size: 35px;
+    align-self: center;
+}
+
+#para{
+    align-self: center;
+    margin: 3px;
+    padding: 5px 10px 40px 10px;
+    text-align: center;
+}
+
+/* flex headings testimonial div row */
+.test-con2{
+    width: 100%;
+    display: flex;
+}
+
+/* flex image and individual testimonial div row */
+.test-con2 .testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* individual testimonials */
+.test-con2 .testimony .testimonies{
+    width: 60%;
+    border: solid #9fa39f 1px;
+    padding: 50px 20px 20px 20px;
+    text-align: center
+}
+
+/* remove space from top of div */
+.test-con2 .testimony .testimonies p{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* enlarge and bolden quotation marks surrounding text */
+.test-con2 .testimony .testimonies span{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.test-con2 div .imgs{
+    /* needed for a z-index */
+    position: relative;
+    /* keeps image on-top of div (Hides intersection border) */
+    z-index: 2;
+    width: 20%;
+    align-self: center;
+    background-color: yellowgreen;
+    border-radius: 45%;
+    border: solid #9fa39f 1px;
+    padding: 10px;
+    margin-bottom: -50px;
+}
+
+.memories{
+    /* height: 100vh; */
+    width: 100%;
+    padding:40px;
+}
+
+.memories #heading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--font-color);
+    margin: 20px 0 40px 0;
+}
+
+.memories .mansory-grid{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-auto-rows: 250px;
+    column-gap: 3px;
+    row-gap: 5px;
+}
+
+.memories .mansory-grid .mansory{
+    height: 100%;
+    width: 100%;
+}
+
+.memories .mansory-grid .mansory:first-child{
+    grid-column: 1/span 2;
+}
+
+.memories .mansory-grid .mansory:nth-child(3){
+    grid-column: 4/span 2;
+    grid-row: 1/span 2;
+}
+
+/*  
+====================================================================================
+*************************** RESPONSIVENESS (768px)  ***************************** 
+====================================================================================
+*/
+
+@media(max-device-width:768px){
+    /* place nav items underneath brand */
+    .navbar #con{
+        flex-direction: row;
+    }
+
+    /* shrink header */
     .content h1{
-        font-size: 33px;
-    }
-    
-    .content h3{
-        font-size: 12px;
+        font-size: 40px;
+        margin-bottom: 5px;
+        padding: 5px;
     }
 
+    /* shrink button */
     .content .btn{
-        width: 45%;
+        margin: 10px;
+        padding: 10px;
+        width: 30%;
         font-size: 20px;
-        
     }
-    
+
+    /* increase height of page */
+    .section1{
+        width: 100%;
+        height: 120vh;
+    }
+
+    .test-con2 div .imgs{
+        width: 70px;
+    }
+
+    .test-con2 div .imgs img{
+        width: 45px;
+    }
+}
+
+
+/*  
+====================================================================================
+*************************** RESPONSIVENESS (425px)  ***************************** 
+====================================================================================
+*/
+@media(max-width:425px){
+    /* shrink header texts */
+    .content h3{
+        font-size: 14px;
+    }
+
+    .content p a{
+        font-size: 14px;
+    }
+
+    /* flex individual testimonies column */
+    .test-con2{
+        flex-direction: column;
+    }
+
+    /* added margin to the bottom on individual testimonie */
+    .test-con2 .testimony{
+        margin-bottom: 20px;
+    }
+
+    /* reduced image background width */
+    .test-con2 div .imgs{
+        width: 60px;
+    }
+}
+
+/*  
+====================================================================================
+*************************** RESPONSIVENESS (320px)  ***************************** 
+====================================================================================
+*/
+@media(max-width:320px){
+    /* shrunk everything */
+    #summary, #skill{
+        font-size: 0.7rem;
+        line-height: 0.7rem;
+    }
+
+    .about{
+        font-size: 4Rem;
+    }
+
+    #heading{
+        font-size: 25px;
+    }
+
+    .test-con2 div .imgs{
+        width: 12vw;
+    }
+
+    .test-con2 div .imgs img{
+        max-height: 10vh;
+        max-width: 10vw;
+    }
+
+    .test-con2 .testimony .testimonies p{
+        font-size: 10px;
+    }
+
+    .test-con2 .testimony .testimonies{
+    width: 60%;
+    }
+}
+ /*  
+====================================================================================
+*************************** RESPONSIVENESS (max height: 414px)  ***************************** 
+====================================================================================
+*/
+@media(max-height: 414px){
+    /* flex individual testimonies column */
+    .test-con2{
+        flex-direction: column;
+    }
 }

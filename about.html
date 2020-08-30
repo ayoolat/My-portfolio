@@ -7,175 +7,137 @@
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="about.html">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
     <title>About</title>
 </head>
 <body>
-    <!-- Navigation bar -->
-    <nav class="navbar" >
-        <div id="brand">
-            <h1 id="name">Toluwanimi Ayoola</h1>
-            <p id="role">Backend Developer</p>
+    <main class="container">
+        <div class="ham">
+            <div class="ham-element"></div>
+            <div class="ham-element1"></div>
         </div>
-        <ul id="con">
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
-    </nav>  
-
-     <!-- image of myself -->
-
-    <div id="image">
-        <img src="/images/IMG_0460.JPG" alt="img">
-    </div>
-
-    <h2 class="about">About</h2>
-
-    <div id="main">
-      
-        <!--  My summary  -->
-        <section id="summary">
-            <div>
-                <h2>Toluwanimi</h2>
-            </div>
-            <hr>
-            <div id="summary1">
-            <p> I'm a backend developer based in Abuja, Nigeria. I enjoy engaging in problem solving  and apply sophisticated designs to create quality product.</p>
-            </div>
-        </section>
     
-        <!--  My skill set summary  -->
+        <!-- Navigation bar -->
+        <nav class="navbar" >
+            <div id="brand">
+                <h1 id="name">Toluwanimi Ayoola</h1>
+                <p id="role">Backend Developer</p>
+            </div>
+            <ul id="con">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>  
     
-        <section id="skill">
-            <div>
-                <h2>Skills</h2>
-            </div>
-            <hr>
-            <div id="skills">
-                <p>I am fluent with...</p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>vanilla JavaScript</li>
-                    <li>Node JS</li>
-                    <li>mongoDB</li>
-                    <li>css frameworks</li>
-                </ul>
-            </div>
-        </section>
+         <!-- image of myself -->
     
-        <!--  Social media directory  -->
-    
-        <section id="socials">
-            <div>
-            <h2>Reach me on...</h2>
-            </div>
-            <hr>
-          <div id="soc-img">
-            <div>  
-                <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/"><img src="/images/icons/LinkedIn.png" alt="LinkedIn"></a>
-            </div>
-            <div>
-                <a href="https://twitter.com/_Toluwa__"><img src="/images/icons/twitter.png" alt="Twitter"></a>
-            </div>
-            <div>
-                <a href="https://www.instagram.com/toluwanii.ao"><img src="/images/icons/instagram.png" alt="Instagram"></a>
-            </div>
-            <div>
-                <a href="https://github.com/ayoolat"><img src="/images/icons/github.png" alt="github"></a>
-            </div>
-            <div>
-                <a href="ayoola_toluwanimi@yahoo.com"><img src="/images/icons/mail.png" alt="Email"></a>
-            </div>
-          </div>
-        </section>
-    </div>
-
-    <!-- Link to my resume -->
-
-    <p id="resume">Click <a href="/images/mycv.pdf"> HERE </a>to view my resume</p>
-
-    <!-- Testimonials -->
-
-    <section class="test-con">
-        <h2 id="heading">TESTIMONIALS</h2>
-        <p id="para">Here are some of my Testimonials</p>
-        <div class="test-con2">
-            <div class="testimony">
-                <div class="imgs"><img src="./images/icons/testimonials.png" alt=""></div>
-               <div class="testimonies">
-                    <p>
-                        <span>"</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure impedit cum quo? Alias, iure.
-                        <span>"</span>
-                    </p>
-                    <h3>JANE DOE</h3>
-                    <p>Company name</p>
-               </div>
-            </div>
-
-            <div class="testimony">
-                <div class="imgs"><img src="./images/icons/testimonials.png" alt=""></div>
-               <div class="testimonies">
-                    <p>
-                        <span>"</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure impedit cum quo? Alias, iure.
-                        <span>"</span>
-                    </p>
-                    <h3>JANE DOE</h3>
-                    <p>Company name</p>
-               </div>
-            </div>
-            
-            <div class="testimony">
-                <div class="imgs"><img src="./images/icons/testimonials.png" alt=""></div>
-               <div class="testimonies">
-                    <p>
-                        <span>"</span>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure impedit cum quo? Alias, iure.
-                        <span>"</span>
-                    </p>
-                    <h3>JANE DOE</h3>
-                    <p>Company name</p>
-               </div>
-            </div>
+        <div id="image">
+            <img src="/images/IMG_0460.JPG" alt="img">
         </div>
-    </section>
-
-
-    <!-- Footer/Newsletter subscription -->
-
-    <footer id="footer">
-
-        <!-- Subscribe to my Newsletter -->
-
-        <section id="subscribe">
-            <p>Subscribe to my newsletters</p>
-            <form method="POST" data-netlify="true" name="newsletter" id="form">
-                <input type="email" name="email" placeholder="Email" id="email">
-                <br>
-                <input type="submit" name="Subscribe" value="Subscribe" id="subscribed" class="btn">
-            </form>
-        </section>
+    
+        <h2 class="about">About</h2>
+    
+        <div id="main">
+          
+            <!--  My summary  -->
+            <section id="summary">
+                <div>
+                    <h2>Toluwanimi</h2>
+                </div>
+                <hr>
+                <div id="summary1">
+                <p> I'm a backend developer based in Abuja, Nigeria. I enjoy engaging in problem solving  and apply sophisticated designs to create quality product.</p>
+                </div>
+            </section>
         
-       <section id="footer1"> 
-                <!-- My social media tags -->
-            <section id="footersocials">  
-                <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/" target="_blank"><img src="/images/icons/linkedin.png" alt="LinkedIn"></a>
-                <a href="https://twitter.com/_Toluwa__" target="_blank"><img src="/images/icons/twitter.png" alt="Twitter"></a>
-                <a href="https://www.instagram.com/toluwanii.ao" target="_blank"><img src="/images/icons/instagram.png" alt="Instagram"></a>
-                <a href="https://github.com/ayoolat" target="_blank"><img src="/images/icons/github.png" alt="github"></a>
-                <a href="ayoola_toluwanimi@yahoo.com" target="_blank"><img src="/images/icons/mail.png" alt="Email"></a>
+            <!--  My skill set summary  -->
+        
+            <section id="skill">
+                <div>
+                    <h2>Skills</h2>
+                </div>
+                <hr>
+                <div id="skills">
+                    <p>I am fluent with...</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>vanilla JavaScript</li>
+                        <li>Node JS</li>
+                        <li>mongoDB</li>
+                        <li>css frameworks</li>
+                    </ul>
+                </div>
             </section>
-            <!-- site navigation links -->
-            <section id="footerlinks">
-                <a href="/index.html">Home</a>
-                <a href="/about.html">About</a>
-                <a href="/projects.html">Projects</a>
-                <a href="/contact.html">Contact</a>
+        
+            <!--  Social media directory  -->
+        
+            <section id="socials">
+                <div>
+                <h2>Reach me on...</h2>
+                </div>
+                <hr>
+              <div id="soc-img">
+                <div>  
+                    <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/"><img src="/images/icons/LinkedIn.png" alt="LinkedIn"></a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/_Toluwa__"><img src="/images/icons/twitter.png" alt="Twitter"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/toluwanii.ao"><img src="/images/icons/instagram.png" alt="Instagram"></a>
+                </div>
+                <div>
+                    <a href="https://github.com/ayoolat"><img src="/images/icons/github.png" alt="github"></a>
+                </div>
+                <div>
+                    <a href="ayoola_toluwanimi@yahoo.com"><img src="/images/icons/mail.png" alt="Email"></a>
+                </div>
+              </div>
             </section>
-       </section>
-    </footer>
+        </div>
+    
+        <!-- Footer/Newsletter subscription -->
+    
+        <footer id="footer">       
+            <section class="footer1">
+                 <!-- Subscribe to my Newsletter -->
+                <section id="subscribe">
+                    <p>Subscribe to my newsletters</p>
+                    <form method="POST" data-netlify="true" name="newsletter" id="form">
+                        <input type="email" name="email" placeholder="Email" id="email" required>
+                        <br>
+                        <input type="submit" name="Subscribe" value="Subscribe" id="subscribed" class="btn">
+                    </form>
+                </section>
+                
+            <section id="footer1"> 
+                        <!-- My social media tags -->
+                    <section id="footersocials">  
+                        <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/" target="_blank"><img src="/images/icons/linkedin.png" alt="LinkedIn"></a>
+                        <a href="https://twitter.com/_Toluwa__" target="_blank"><img src="/images/icons/twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/toluwanii.ao" target="_blank"><img src="/images/icons/instagram.png" alt="Instagram"></a>
+                        <a href="https://github.com/ayoolat" target="_blank"><img src="/images/icons/github.png" alt="github"></a>
+                        <a href="ayoola_toluwanimi@yahoo.com" target="_blank"><img src="/images/icons/mail.png" alt="Email"></a>
+                    </section>
+                    <!-- site navigation links -->
+                    <section id="footerlinks">
+                        <a href="/index.html">Home</a>
+                        <a href="/about.html">About</a>
+                        <a href="/projects.html">Projects</a>
+                        <a href="/contact.html">Contact</a>
+                    </section>
+                </section>
+            </section>
+        </footer>
+    </main>
+
+    <script src="./index.js"></script>
 </body>
 </html>

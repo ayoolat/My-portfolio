@@ -3,38 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/gs.css">
+    <link rel="stylesheet" href="/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
     <title>Toluwanimi Ayoola</title>
 </head>
 <body>
     <!-- Navigation bar -->
-    <div class="container">
-            <!-- <nav class="navbar">
-                <div id="brand">
-                    <h1 id="name">Toluwanimi Ayoola</h1>
-                    <p id="role">Backend Developer</p>
-                </div>
-                <ul id="con">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="/projects.html">Projects</a></li>
-                    <li><a href="/contact.html">Contact</a></li>
-                </ul>
-            </nav> -->
-        
-           <div class="container2">
-               <div class="content">
-                   <h1>Welcome to my site</h1>
-                   <h3>I'm Ayoola Toluwanimi, and I'm a backend developer</h3>
-                   <p>HTML, CSS, vanilla-JavaScript, Node JS, mongoDB, css, frameworks</p>
-                   <p><a href="./contact.html">Contact me</a> <span>to hire me</span></p>
-                   <button class="btn"><a href="/about.html">About me!</a></button>
+    <div class="width">
+        <div class="container">
+            <section class="section1">
+                <div class="ham-con">
+                    <button class="ham">
+                        <div class="ham-element"></div>
+                        <div class="ham-element1"></div>
+                    </button>
                </div>
-           </div>
+                <div class="nav-con">
+                    <nav class="navbar">
+                        <div id="brand">
+                            <h1 id="name">Toluwanimi Ayoola</h1>
+                            <p id="role">Backend Developer</p>
+                        </div>
+                        <ul id="con">
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/projects.html">Projects</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+                <header class="container2">
+                    <div class="content">
+                        <h1>Welcome to my site</h1>
+                        <h3>I'm Ayoola Toluwanimi, and I'm a backend developer</h3>
+                        <p>HTML, CSS, vanilla-JavaScript, Node JS, mongoDB, css, frameworks</p>
+                        <p><a href="./contact.html">Contact me</a> <span>to hire me</span></p>
+                        <button class="btn"><a href="/about.html">About me!</a></button>
+                    </div>
+                </header>
+            </section>
     
-           
+          <!-- What do I do section -->
+            <section class="section2">
+                <h2 class="about">What do I do?</h2>
+                <!-- Name and what I do -->
+                <div class="sub-section2">
+                    <section id="summary">
+                        <div>
+                            <h2>Toluwanimi</h2>
+                        </div>
+                        <hr>
+                        <div id="summary1">
+                        <p> I'm a backend developer based in Abuja, Nigeria. I enjoy engaging in problem solving  and apply sophisticated designs to create quality product.</p>
+                        </div>
+                    </section>
+                
+                    <!--  My skills -->
+                
+                    <section id="skill">
+                        <div>
+                            <h2>Skills</h2>
+                        </div>
+                        <hr>
+                        <div id="skills">
+                            <p>I am fluent with...</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>vanilla JavaScript</li>
+                                <li>Node JS</li>
+                                <li>mongoDB</li>
+                                <li>css frameworks</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+    
+                <!-- Testimonials container -->
+                <section class="test-con">
+                    <h2 id="heading">TESTIMONIALS</h2>
+                    <p id="para">Here are some of my Testimonials</p>
+                    <!-- Testimony List -->
+                    <div class="test-con2">
+                        <div class="testimony">
+                            <div class="imgs"><img src="./images/icons/testimonials.png" alt=""></div>
+                           <div class="testimonies">
+                                <p>
+                                    <span>"</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure impedit cum quo? Alias, iure.
+                                    <span>"</span>
+                                </p>
+                                <h3>JANE DOE</h3>
+                                <p>Company name</p>
+                           </div>
+                        </div>
+            
+                        <div class="testimony">
+                            <div class="imgs"><img src="./images/icons/testimonials.png" alt=""></div>
+                           <div class="testimonies">
+                                <p>
+                                    <span>"</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure impedit cum quo? Alias, iure.
+                                    <span>"</span>
+                                </p>
+                                <h3>JANE DOE</h3>
+                                <p>Company name</p>
+                           </div>
+                        </div>
+                        
+                        <div class="testimony">
+                            <div class="imgs"><img src="./images/icons/testimonials.png" alt=""></div>
+                           <div class="testimonies">
+                                <p>
+                                    <span>"</span>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa iure impedit cum quo? Alias, iure.
+                                    <span>"</span>
+                                </p>
+                                <h3>JANE DOE</h3>
+                                <p>Company name</p>
+                           </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Mansory section here -->
+            <section class="memories">
+                <div id="heading">
+                    <h3>Here are some of my best Memories</h3>
+                </div>
+                <!-- mansory images(8) -->
+                <div class="mansory-grid">
+                    <img src="./images/mansory images/img4.JPG" alt="" class="mansory">
+                    <img src="./images/mansory images/img3.JPG" alt="" class="mansory">
+                    <img src="./images/mansory images/img5.JPG" alt="" class="mansory">
+                    <img src="./images/mansory images/img6.JPG" alt="" class="mansory">
+                    <img src="./images/mansory images/img7.JPG" alt="" class="mansory">
+                    <img src="./images/mansory images/img8.JPG" alt="" class="mansory">
+                    <img src="./images/mansory images/img9.JPG" alt="" class="mansory">
+                    <img src="./images/mansory images/img10.JPG" alt="" class="mansory">
+                </div>
+            </section>
+
+            <footer id="footer">       
+                <section class="footer1">
+                     <!-- Subscribe to my Newsletter -->
+                    <section id="subscribe">
+                        <p>Subscribe to my newsletters</p>
+                        <form method="POST" data-netlify="true" name="newsletter" id="form">
+                            <input type="email" name="email" placeholder="Email" id="email" required>
+                            <br>
+                            <input type="submit" name="Subscribe" value="Subscribe" id="subscribed" class="btn">
+                        </form>
+                    </section>
+                    
+                <section id="footer1"> 
+                            <!-- My social media tags -->
+                        <section id="footersocials">  
+                            <a href="https://www.linkedin.com/in/ayoola-toluwanimi-03454b172/" target="_blank"><img src="/images/icons/linkedin.png" alt="LinkedIn"></a>
+                            <a href="https://twitter.com/_Toluwa__" target="_blank"><img src="/images/icons/twitter.png" alt="Twitter"></a>
+                            <a href="https://www.instagram.com/toluwanii.ao" target="_blank"><img src="/images/icons/instagram.png" alt="Instagram"></a>
+                            <a href="https://github.com/ayoolat" target="_blank"><img src="/images/icons/github.png" alt="github"></a>
+                            <a href="ayoola_toluwanimi@yahoo.com" target="_blank"><img src="/images/icons/mail.png" alt="Email"></a>
+                        </section>
+                        <!-- site navigation links -->
+                        <section id="footerlinks">
+                            <a href="/index.html">Home</a>
+                            <a href="/about.html">About</a>
+                            <a href="/projects.html">Projects</a>
+                            <a href="/contact.html">Contact</a>
+                        </section>
+                    </section>
+                </section>
+            </footer>
+        </div>
     </div>
 </body>
+
+<script src="./index.js"></script>
 </html>

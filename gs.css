@@ -11,80 +11,158 @@ body{
     padding: 0;
 }
 
-/* ================================================================================== */
 
-/* ******************************   DESKTOP VIEW   *********************************** */
-
-/* ==================================================================================== */
-
-/* NAVBAR STARTS HERE */
-
-/* Main navbar div */
-.con{
+/*  
+====================================================================================
+******************************   HAMBURGER MENU  *********************************** 
+====================================================================================
+*/
+.ham-con{
+    position: sticky;
     max-width: 1440px;
+    display: flex;
+    right: 0;
+    border: none;
+    z-index: 1000;
+}
+.ham {
+    visibility: hidden;
+    position: absolute;
+    top: 10;
+    right: 0;
+    z-index: 1000;
+    height: 36px;
+    cursor: pointer;
+    margin: 15px 0 5px 0;
+    display: flex;
+    flex-direction: column;
+    width: 3%;
+    justify-self: flex-end;
+    align-items: flex-end;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
 }
 
+.ham:hover{
+    border: none;
+}
+
+.ham-element, .ham-element1{
+    width: 30px;
+    border-top: 2px solid black;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+
+.first{
+    transform: rotate(-45deg);
+    margin: 0 20px;
+    transition: all ease-in-out 300ms;
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+
+.last{
+    transform: rotate(-120deg);
+    transition: all ease-in-out 300ms;
+    -moz-transform: rotate(-120deg);
+    -ms-transform: rotate(-120deg);
+}
+
+
+/*  
+====================================================================================
+******************************  NAVBAR STARTS HERE  ********************************
+====================================================================================
+*/
+
+
+/* NAV CONTAINER */
+.nav-con{
+    max-width: 1440px; 
+    /* position: sticky; */
+    /* right: 0; */
+    /* display: flex;  */
+    margin: 0 auto; 
+}
+
+/* nav flex */
 .navbar{
     display: flex;
-    margin: 5px;
-    padding: 7px 0;
     color: #073307;
     margin: 0;
     padding: 0;
-    background: rgba(255,255,255,0);
-    position: fixed;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 1px 1px 10px 10px rgba(0,0,0,0.2);
+    position: sticky;
     width: 100%;
 }
 
-/* Name and job role div */
-#brand{
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: nowrap; */
-    padding-left: 2rem;
-    padding-top: 0.5rem;
-    flex: 1; 
-}
+/* To drop the navbar when hambuger is clicked */
+.showNav {
+    transform: translateY(0);
+  }
+
+/* logo */
 
 .navbar #brand p, #brand h1{
     padding: 0;
-    margin: 5px;
+    margin: 0 5px 5px 5px;
+}
+
+#brand{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    margin-bottom: 0;
+    flex: 1; 
 }
 
 .navbar #brand p{
     padding-left: 25px;
 }
 
-
-/* Home, about etc divs */
+/* nav list */
 .navbar #con{
     display: flex;
     list-style-type: none;
-    padding-right: 2rem;
+    padding-right: 15px;
+    align-items: center;
+    margin-right: 30px;
 }
 
+/* nav items */
 .navbar #con li{
-    padding: 1.3rem;
+    padding: 0;
     font-size: 1.1rem;
-    /* flex-wrap: nowrap; */
-}
-
-.navbar #con li:hover{
-    background-color: #d1d6d2;
-    transform: scale(1.2);
 }
 
 #con li a{
+    display: inline-block;
+    padding: 20px 15px 20px 10px;
     color: inherit;
     text-decoration: none;
     text-align: center;
 }
+
+/* nav-list animation on hover */
+.navbar #con li a:hover{
+    transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -moz-transform: scale(1.3);
+    transform: scale(1.3);
+    border: none;
+}
+
 /* navbar ends here */
 
-
-
-/* FOOTER FOOTER FOOTER FOOTER FOOTER */
-
+/*  
+====================================================================================
+******************************  FOOTER STARTS HERE  ********************************
+====================================================================================
+*/
 
 /* Main footer div */
 #footer{
@@ -92,21 +170,60 @@ body{
     height: rem;
     background-color: #073307;
     width: 100vw;
-    /*  FOOTER HAS POSITION: ABSOLUTE WITH BOTTOM: 0 STYLE, INLINE ON THE INDEX HTML */
     justify-content: center;
     max-width: 1440px;
 }
 
-/* Social Media icons/links and navbar links (home, about, etc) DIV */
+.footer1{
+    display: flex;
+}
+
+/* newsletter form float(column) */
+#footer #subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+/* subscribe to News letter form div */
+#footer #subscribe #form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+#footer #subscribe p{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 0.2rem;
+    padding: 0.5rem 0;
+    justify-self: center;
+    align-self: center;
+}
+
+#footer #subscribe #email{
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+#footer #subscribe .btn{
+    color: #073307;
+    margin: 0;
+    padding: 0.2rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* footer links and social media link float column */
 #footer1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* flex: 2; */
     margin-bottom: 3rem;
     justify-self: flex-start;
     border-left: solid white 0.01rem;
-    padding-left: 2rem;
     margin: 1rem 2rem;
 }
 
@@ -121,12 +238,13 @@ body{
     height: 2.5rem;
     width: 2.5rem;
     padding: 5px 10px 5px 5px;
-    margin: 5px 5px 20px 5px;
+    margin: 5px 5px 5px 5px;
 }
 
 /* Navbar links (home, about, etc) */
 #footer #footer1 #footerlinks{
-    /* padding-left: 2rem; */
+    display: flex;
+    justify-content: center;
     margin: 0;
 }
 
@@ -138,57 +256,44 @@ body{
     padding: 0 1rem;
 }
 
-/* News letter form div */
-#footer #subscribe #form{
-    display: flex;
-    flex-direction: column;
-}
-
-#footer #subscribe{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-#footer #subscribe p{
-    color: white;
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin: 0.2rem;
-    padding: 0.5rem 0;
-    justify-self: center;
-    align-self: center;
-}
-
-#footer #subscribe #email{
-    padding: 0.3rem;
-}
-
-#footer #subscribe .btn{
-    margin: 0;
-    padding: 0.3rem 0;
-}
-
-/* ====================================================================================== */
-
-/* *************************** TABLET RESPONSIVENESS ************************************* */
-
-/* ======================================================================================= */
+/*  
+====================================================================================
+******************************  RESPONSIVENESS (768PX)  ****************************
+====================================================================================
+*/
 
 @media(max-device-width:768px){
-    /* Navbar items move from column to row */
+    /* shows hamburger menu */
+    .ham{
+        visibility: visible;
+        position: absolute;
+    }
+
+    /* footer container */
     .con{
         max-width: 768px;
     }
+    
     .navbar{
         flex-direction: column;
+        /* allows the use of z-index */
+        position: absolute;
+        /* hide the menu above the screen by default */
+        transform: translateY(-100vh);
+        /* transition adds a little animation when sliding in and out the menu */
+        transition: transform 0.2s ease;
     }
+
+    /* Drops the navbar to it normal place */
+    .showNav {
+        transform: translateY(0);
+    }
+
+    /* flex av item in a column */
     .navbar #con{
        flex-direction: column;
    }
 
-   /* Adjustments and position aligning */
    .navbar #brand{
        padding: 0;
    }
@@ -201,15 +306,15 @@ body{
         padding-right: 0;
     }
 
-    /* Footer divs move from row to column */
+    /* footer container */
    #footer{
-       height: 35vh;
-       width: 768px;
-       flex-direction: column;
-   }
+       max-width: 768px;
+    }
 
+    /* flex footer content in a column */
    .footer1{
        width: 100%;
+       flex-direction: column;
    }
 
    /* Aligning and resizing */
@@ -224,10 +329,13 @@ body{
         margin: 0 5px 10px 5px;
     }
 
-    .navbar{
-        position: static;
-    }
 }
+
+/*  
+====================================================================================
+******************************  RESPONSIVENESS (425PX)  ****************************
+====================================================================================
+*/
 
 @media(max-width: 425px){
     .con{
@@ -235,25 +343,54 @@ body{
     }
 
     #footer{
-        height: 40vh;
         max-width: 425px;
     }
 }
 
+/*  
+====================================================================================
+***************************  RESPONSIVENESS (393PX)  ******************************
+====================================================================================
+*/
 
-/* ============================================================================================= */
+@media(max-width:393px){
 
-/* ****************************** PHONE VIEW PORTRIAT VIEW ************************************** */
+    #footer{
+        max-width: 425px;
+    }
 
-/* =============================================================================================== */
+    #footer #footer1 #footerlinks a{
+        font-size: 7px;
+        padding: 0 3px;
+    }
 
+    #footer #subscribe p{
+        font-size: 0.8rem;
+        
+    }
+}
+
+
+/*  
+====================================================================================
+************************  RESPONSIVENESS (max height: 414PX)  ***********************
+====================================================================================
+*/
 
 @media(max-device-height:414px){
+
+    .footer1{
+        justify-content: center;
+    }
     
     /* shrink footer height */
     #footer{
-        height: 60vh;
-        width: 414px;
+        height: 40vh;
+        max-width: 667px;
+    }
+
+    #footer1{
+        padding-left: 0;
     }
 
     /* realignment */

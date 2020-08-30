@@ -11,42 +11,56 @@ body{
     padding: 0;
 }
 
-/* ================================================================================== */
 
-/* ******************************   DESKTOP VIEW   *********************************** */
+/*  
+====================================================================================
+*************************** Navbar and footer changes  *****************************
+====================================================================================
+*/
 
-/* ==================================================================================== */
-
-/* Changed the navbar color for better asthetics and visibility */
+/* Changed the footer and footer items color and navbar color for better asthetics and visibility */
 .navbar{
     background-color: white ;
 }
 
-/* Changed the footer and footer items color for better asthetics and visibility */
 #footer{
     background-color: white;
 }
 
-#footer #subscribe p, #footer #footer1 #footerlinks a{
+#footer #subscribe p{
+    color: black;
+}
+
+#footer #footer1 #footerlinks a{
     border-right: black solid 1px;
     color: black;
 }
 
 #footer #subscribe .btn{
     background-color: #073307;
+    color: white;
 }
 
-/* contact me page details start here */
-body{
+/*  
+====================================================================================
+*************************** Body starts here (1440PX)  *****************************
+====================================================================================
+*/
+
+/* container */
+.con{
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #073307;
 }
 
-/* main contact div */
+
+/* main contact flex-box */
 #contactme{
     margin-top: auto;
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 /* Template for both sides of contact divs */
@@ -54,17 +68,17 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 7rem;
-    height: 70vh;
-    width: 30vw;
+    height: 400px;
+    width: 30%;
     align-self: center;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     background-color: whitesmoke;
 }
 
 /* Left side of contact divs */
-#contact1{
-    padding-left: 5rem;
+#contact1 .contact-con{
+    width: 70%;
 }
 
 /* Social media icon container */
@@ -114,7 +128,6 @@ body{
 display: flex;
 flex-direction: column;
 align-content: center;
-margin-left: 2rem;
 width: 80%;
 }
 
@@ -137,13 +150,17 @@ width: 80%;
     font-size: 1rem;
 }
 
-/* ====================================================================================== */
-
-/* *************************** TABLET RESPONSIVENESS ************************************* */
-
-/* ======================================================================================= */
+/*  
+====================================================================================
+**************************** RESPONSIVENESS (768PX) ********************************
+====================================================================================
+*/
 
 @media(max-width:768px){
+    .con{
+        max-width: 768px;
+    }
+
     /* main contact me divs moves from row to column */
     #contactme{
         flex-direction: column;
@@ -151,9 +168,8 @@ width: 80%;
 
     /* Resizing top half div (left side) */
     #contact1{
-        height: 20vh;
+        width: 50%;
         justify-content: center;
-        padding-left: 1.5rem;
         text-align: center;
     }
 
@@ -168,48 +184,54 @@ width: 80%;
 
     #contact2{
         margin-top: 0.2rem;
-        height: 40vh;
+        width: 50%;
     }
 }
 
-/* ====================================================================================== */
+/*  
+====================================================================================
+***********************************  (425PX)  **************************************
+====================================================================================
+*/
 
-/* *************************** PHONE RESPONSIVENESS ************************************* */
+@media(max-width:425px){
+    .con{
+        max-width: 425px;
+    }
 
-/* ======================================================================================= */
-
-@media(max-width:414px){
-    /* changed navbabr position for asthetics */
+    /* changed navbar position for asthetics */
     .navbar{
         position: static;
     }
 
     /* resizing and aligning */
     #contactme{
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
     }
 
     #contact1{
-        height: 50vh;
-        width: 40vh;
+        /* height: 50vh; */
+        margin-top: -150px;
+        width: 80%;
     }
 
     #contact2{
-        height: 60vh;
-        width: 40vh;
-        margin-top: 0.3rem;
+        /* height: 60vh; */
+        width: 80%;
+        /* margin-top: 0.3rem; */
     }
 
     #contact1 #img{
         margin-bottom: 0.5rem;
     }
+
 }
 
-/* ====================================================================================== */
-
-/* *************************** PHONE RESPONSIVENESS ( PORTRIATE) ****************************** */
-
-/* ======================================================================================= */
+/*  
+====================================================================================
+*************************** Body starts here (1440PX)  *****************************
+====================================================================================
+*/
 
 @media(max-height:414px){
     /* changed navbabr position for asthetics */
@@ -225,7 +247,12 @@ width: 80%;
 
     #contact1{
         margin-top: 5rem;
-        height: 40vh;
+        height: 60vh;
+        padding-left: 0;
+    }
+
+    #contact1 h1, #contact1 p{
+        padding-right: 0;
     }
 
     #contact2{
@@ -239,6 +266,19 @@ width: 80%;
 
     #contact1 #img{
         margin-bottom: 0.2rem;
+    }
+
+    #contact1 #img .img1{
+        height: 3rem;
+        width: 3rem;
+        align-items: center;
+    }
+
+    #contact1 #img .img1 img{
+        margin-top: 0.7rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        align-self: center;
     }
 
 }
