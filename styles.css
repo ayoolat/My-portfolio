@@ -297,7 +297,7 @@ hr{
 /* mansory container */
 .memories{
     width: 100%;
-    padding:20px 100px;
+    padding:40px 20px;
 }
 
 .memories #heading{
@@ -305,7 +305,7 @@ hr{
     justify-content: center;
     text-align: center;
     color: var(--font-color);
-    margin: 20px 0 20px 0;
+    margin: 20px 0 40px 0;
 }
 
 /* mansonry grid box */
