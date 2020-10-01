@@ -56,17 +56,19 @@ body{
 
 
 .first{
-    transform: rotate(-45deg);
+    transform: rotate(-62deg);
     margin: 0 20px;
-    width: 18px;
+    width: 15px;
     transition: all ease-in-out 300ms;
     -moz-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
 }
 
 .last{
-    transform: rotate(60deg);
-    width: 18px;
+    transform: rotate(62deg);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 15px;
     transition: all ease-in-out 300ms;
     -moz-transform: rotate(60deg);
     -ms-transform: rotate(60deg);
@@ -167,9 +169,7 @@ body{
 /* Main footer div */
 #footer{
     display: flex;
-    height: rem;
     background-color: #073307;
-    width: 100vw;
     justify-content: center;
     max-width: 1440px;
 }
@@ -212,8 +212,9 @@ body{
 }
 
 #footer #subscribe #email{
-    padding: 0.2rem;
+    padding: 0.5rem;
     border-radius: 5px;
+    border: none;
 }
 
 #footer #subscribe .btn{
