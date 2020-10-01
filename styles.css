@@ -17,9 +17,68 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+
 /* using css variables to add font color */
 :root{
     --font-color: #073307;
+    --yellow: #feb60a;
+	--red: #ff0062;
+	--blue: #00dbf9;
+	--violet: #da00f7;
+}
+div#loader {
+    display: block;
+    display: flex;
+    position: absolute;
+	justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color: white;
+}
+div#loader > div {
+	width: 3vw;
+	height: 3vw;
+	border-radius: 100%;
+	margin: 2vw;
+	background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+	animation: bounce 1.5s 0.5s linear infinite;
+}
+.yellow-loader{
+	background-color: var(--yellow);
+}
+
+.red-loader {
+	background-color: var(--red);
+	animation-delay: 0.1s;
+}
+
+.blue-loader {
+	background-color: var(--blue);
+	animation-delay: 0.2s;
+}
+
+.violet-loader {
+	background-color: var(--violet);
+	animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+	0%, 50%, 100% {
+		transform: scale(1);
+		filter: blur(0px);
+	}
+	25% {
+		transform: scale(0.6);
+		filter: blur(3px);
+	}
+	75% {
+		filter: blur(3px);
+		transform: scale(1.4);
+	}
 }
 
 /* display hamburger menu */
@@ -283,14 +342,24 @@ hr{
 
 /* individual testimonials */
 .test-con2 .testimony .testimonies{
-    width: 350px;
+    width: 400px;
     height: 430px;
     border: solid #9fa39f 1px;
+    border-radius: 50%;
     padding: 50px 20px 20px 20px;
     text-align: center;
     white-space: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.con-testis{
+    width: 85%;
+    border-radius: 50%;
+    padding: 0 10px;
+}
 /* remove space from top of div */
 .test-con2 .testimony .testimonies p{
     margin-top: 0;
