@@ -14,13 +14,27 @@
     <title>Projects</title>
 </head>
 <body>
+       <!-- loader -->
+    <div id="loader">
+        <div class="yellow-loader"></div>
+        <div class="red-loader"></div>
+        <div class="blue-loader"></div>
+        <div class="violet-loader"></div>
+    </div>
     <main class="contain">
          <!-- Navigation bar -->
-        <div class="ham-con">
-            <div class="ham">
-                <div class="ham-element"></div>
-                <div class="ham-element1"></div>
-            </div>
+         <div class="ham" onclick="showFullNav()">
+            <span class="ham-element"></span>
+            <span class="ham-element1"></span>
+            <span class="ham-element2"></span>
+        </div>
+        <div id="hamburger-nav">
+            <ul id="hamburger-con">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
         </div>
         <div class="con">
             <nav class="navbar">

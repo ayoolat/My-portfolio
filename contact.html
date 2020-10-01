@@ -9,17 +9,34 @@
     <script
     src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
 <body>
+       <!-- loader -->
+    <div id="loader">
+        <div class="yellow-loader"></div>
+        <div class="red-loader"></div>
+        <div class="blue-loader"></div>
+        <div class="violet-loader"></div>
+    </div>
     <main class="con">
         <!-- hamburger -->
-        <div class="ham">
-            <div class="ham-element"></div>
-            <div class="ham-element1"></div>
+        <div class="ham" onclick="showFullNav()">
+            <span class="ham-element"></span>
+            <span class="ham-element1"></span>
+            <span class="ham-element2"></span>
         </div>
+
+        <div id="hamburger-nav">
+            <ul id="hamburger-con">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
         <!-- Navigation bar -->
         <nav class="navbar" >
             <div id="brand">

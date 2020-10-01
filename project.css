@@ -66,6 +66,10 @@
     box-shadow: 5px 5px 20px rgba(0,0,0,0.5)
 }
 
+.cards:hover{
+    transform: scale(1.1);
+}
+
 /* image resizing */
 .cards img{
     width: 100%;

@@ -11,13 +11,80 @@ body{
     padding: 0;
 }
 
+/*  
+====================================================================================
+******************************   LOADER  *********************************** 
+====================================================================================
+*/
+/* using css variables to add font color */
+:root{
+    --font-color: #073307;
+    --yellow: #feb60a;
+	--red: #ff0062;
+	--blue: #00dbf9;
+	--violet: #da00f7;
+}
+div#loader {
+    display: block;
+    display: flex;
+    position: absolute;
+	justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    background-color: white;
+}
+div#loader > div {
+	width: 3vw;
+	height: 3vw;
+	border-radius: 100%;
+	margin: 2vw;
+	background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
+	animation: bounce 1.5s 0.5s linear infinite;
+}
+.yellow-loader{
+	background-color: var(--yellow);
+}
 
+.red-loader {
+	background-color: var(--red);
+	animation-delay: 0.1s;
+}
+
+.blue-loader {
+	background-color: var(--blue);
+	animation-delay: 0.2s;
+}
+
+.violet-loader {
+	background-color: var(--violet);
+	animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+	0%, 50%, 100% {
+		transform: scale(1);
+		filter: blur(0px);
+	}
+	25% {
+		transform: scale(0.6);
+		filter: blur(3px);
+	}
+	75% {
+		filter: blur(3px);
+		transform: scale(1.4);
+	}
+}
 /*  
 ====================================================================================
 ******************************   HAMBURGER MENU  *********************************** 
 ====================================================================================
 */
 .ham {
+    display: none;
     width: 40px;
     height: 30px;
     position: fixed;
@@ -71,6 +138,54 @@ body{
 .ham-element2.open{
     top: 18px;
     transform: rotate(-135deg);
+}
+
+/*  
+====================================================================================
+******************************  NAVBAR ham  ********************************
+====================================================================================
+*/
+
+/* hamburger nav */
+#hamburger-nav{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: #073307;
+    opacity: 0.8;
+    display: none;
+    animation: appear linear 1s forwards;
+}
+
+#hamburger-nav li{
+    font-size: 1.7rem;
+    list-style: none;
+    margin: auto;
+    width: 40%;
+}
+
+#hamburger-nav a{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+#hamburger-con{
+    margin: 200px auto;
+    width: 40%;
+    height: 50%;
+}
+
+/* nav-list animation on hover */
+#hamburger-nav li a:hover{
+    transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+    border: none;
 }
 
 /*  
@@ -271,52 +386,21 @@ body{
 */
 
 @media(max-device-width:768px){
-    .ham-con{
-        max-width: 768px;
-    }
     /* shows hamburger menu */
     .ham{
-        visibility: visible;
-        position: absolute;
+        display: block;
+    }
+
+    .navbar{
+        display: none;
     }
 
     /* footer container */
     .con{
         max-width: 768px;
+        margin-top: 20px;
     }
     
-    .navbar{
-        flex-direction: column;
-        /* allows the use of z-index */
-        position: absolute;
-        /* hide the menu above the screen by default */
-        transform: translateY(-100vh);
-        /* transition adds a little animation when sliding in and out the menu */
-        transition: transform 0.2s ease;
-    }
-
-    /* Drops the navbar to it normal place */
-    .showNav {
-        transform: translateY(0);
-    }
-
-    /* flex av item in a column */
-    .navbar #con{
-       flex-direction: column;
-   }
-
-   .navbar #brand{
-       padding: 0;
-   }
-
-   .navbar #brand p, .navbar #brand h1{
-       padding-left: 1rem;
-   }
-
-   .navbar #con{
-        padding-right: 0;
-    }
-
     /* footer container */
    #footer{
        max-width: 768px;
