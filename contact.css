@@ -134,11 +134,13 @@ width: 80%;
 /* name, email and phone number inputs */
 #contact2 .contactform input{
     margin: 0.5rem;
-    padding: 0.2rem;
+    padding: 0.5rem;
+    border: none;
 }
 
 #contact2 .contactform textarea{
     margin: 0.5rem;
+    border: none;
 }
 
 #contact2 .contactform #submit{
