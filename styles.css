@@ -101,16 +101,19 @@ body{
     font-size: 55px;
     margin-bottom: 5px;
     padding: 5px;
+    animation: slide1 1s linear forwards;
 }
 
 .content h3{
     font-size: 17px;
+    animation: slide2 2s linear forwards;
 }
 
 .content p, .content p a{
     font-size: 14px;
     margin: 0;
     padding: 5px;
+    animation: slide2 2s linear forwards;
 }
 .content p a{
     font-size:20px;
@@ -126,7 +129,29 @@ body{
     border-radius: 5px;
     border: none;
     background-color: var(--font-color);
+    animation: slide1 2s linear forwards;
 }
+
+@keyframes slide1{
+    0% {
+        transform: translateX(700px);
+        /* -webkit-transform: scale(1.0); */
+    }
+    100% {
+        transform: translateX(0);
+        /* -webkit-transform: scale(2.0); */
+    }
+}
+
+@keyframes slide2{
+    0% {
+        transform: translateX(800px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 
 /* changed the color of the text in the button */
 .content a{
@@ -259,7 +284,7 @@ hr{
 /* individual testimonials */
 .test-con2 .testimony .testimonies{
     width: 350px;
-    height: 400px;
+    height: 430px;
     border: solid #9fa39f 1px;
     padding: 50px 20px 20px 20px;
     text-align: center;
@@ -288,10 +313,10 @@ hr{
     justify-content: center;
     align-self: center;
     background-color: yellowgreen;
-    border-radius: 45%;
+    border-radius: 50%;
     border: solid #9fa39f 1px;
     padding: 10px;
-    margin-bottom: -50px;
+    margin-bottom: -40px;
 }
 
 /* mansory container */
