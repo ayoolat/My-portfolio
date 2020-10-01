@@ -18,68 +18,6 @@ body{
 }
 
 
-/* using css variables to add font color */
-:root{
-    --font-color: #073307;
-    --yellow: #feb60a;
-	--red: #ff0062;
-	--blue: #00dbf9;
-	--violet: #da00f7;
-}
-div#loader {
-    display: block;
-    display: flex;
-    position: absolute;
-	justify-content: center;
-    align-items: center;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 10000;
-    background-color: white;
-}
-div#loader > div {
-	width: 3vw;
-	height: 3vw;
-	border-radius: 100%;
-	margin: 2vw;
-	background-image: linear-gradient(145deg, rgba(255,255,255,0.5) 0%, rgba(0,0,0,0) 100%);
-	animation: bounce 1.5s 0.5s linear infinite;
-}
-.yellow-loader{
-	background-color: var(--yellow);
-}
-
-.red-loader {
-	background-color: var(--red);
-	animation-delay: 0.1s;
-}
-
-.blue-loader {
-	background-color: var(--blue);
-	animation-delay: 0.2s;
-}
-
-.violet-loader {
-	background-color: var(--violet);
-	animation-delay: 0.3s;
-}
-
-@keyframes bounce {
-	0%, 50%, 100% {
-		transform: scale(1);
-		filter: blur(0px);
-	}
-	25% {
-		transform: scale(0.6);
-		filter: blur(3px);
-	}
-	75% {
-		filter: blur(3px);
-		transform: scale(1.4);
-	}
-}
 /* display hamburger menu */
 .ham {
     display: block;
@@ -508,6 +446,12 @@ hr{
 
     .test-con2 .testimony .testimonies{
         width: 47%;
+    }
+
+    .test-con2 .testimony .testimonies .con-testis p{
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
     }
 
     .test-con2{
