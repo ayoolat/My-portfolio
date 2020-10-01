@@ -201,19 +201,7 @@ width: 80%;
         max-width: 425px;
     }
 
-    /* changed navbar position for asthetics */
-    .navbar{
-        position: static;
-    }
-
-    /* resizing and aligning */
-    #contactme{
-        /* padding-top: 1rem; */
-    }
-
     #contact1{
-        /* height: 50vh; */
-        margin-top: -150px;
         width: 80%;
     }
 

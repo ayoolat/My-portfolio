@@ -165,17 +165,12 @@ hr{
 */
 
 @media(max-width:425px){
-    /* changed navbar position for asthetics */
-    .navbar{
-        position: static;
-    }
     /* resizing self image and div*/
     #image{
         display: flex;
         justify-content: center;
         height: 40vh;
         width: 100vw;
-        margin-top: -250px;
     }
 
     #image img{
