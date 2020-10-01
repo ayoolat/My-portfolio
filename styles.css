@@ -80,29 +80,53 @@ div#loader > div {
 		transform: scale(1.4);
 	}
 }
-
 /* display hamburger menu */
 .ham {
-    visibility: visible;
-}
-
-/* Navbar here */
-.navbar{
-    /* make navbar transparent */
-    background-color: rgba(255, 255, 255, 0);
-    /* remove box shadow */
-    box-shadow: none;
-    /* hide the menu above the screen by default */
-    transform: translateY(-100vh);
-    /* transition adds a little animation when sliding in and out the menu */
-    transition: transform 0.2s ease;
-}
-    /* to add restore navbar height when class is added */
-.showNav {
-    transform: translateY(0);
+    display: block;
 }
 
 
+/* hamburger nav */
+#hamburger-nav{
+    position: fixed;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--font-color);
+    opacity: 0.8;
+    display: none;
+    animation: appear linear 1s forwards;
+}
+
+#hamburger-nav li{
+    font-size: 1.7rem;
+    list-style: none;
+    margin: auto;
+    width: 40%;
+}
+
+#hamburger-nav a{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+#hamburger-con{
+    margin: 200px auto;
+    width: 40%;
+    height: 50%;
+}
+
+/* nav-list animation on hover */
+#hamburger-nav li a:hover{
+    transition: all ease-in-out 300ms;
+    -moz-transition: all ease-in-out 300ms;
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+    border: none;
+}
 
 /*  
 ====================================================================================
@@ -121,7 +145,6 @@ div#loader > div {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
 }
 
 /* background image here */
@@ -198,6 +221,17 @@ div#loader > div {
     }
     100% {
         transform: translateX(0);
+        /* -webkit-transform: scale(2.0); */
+    }
+}
+
+@keyframes appear{
+    0% {
+        transform: scale(0);
+        /* -webkit-transform: scale(1.0); */
+    }
+    100% {
+        transform: scale(1);
         /* -webkit-transform: scale(2.0); */
     }
 }
@@ -342,7 +376,7 @@ hr{
 
 /* individual testimonials */
 .test-con2 .testimony .testimonies{
-    width: 400px;
+    width: 60%;
     height: 430px;
     border: solid #9fa39f 1px;
     border-radius: 50%;
@@ -435,8 +469,13 @@ hr{
 *************************** RESPONSIVENESS (768px)  ***************************** 
 ====================================================================================
 */
+@media(max-device-width:1100px){
+    .test-con2 .testimony .testimonies{
+        width: 80%;
+    }
+}
 
-@media(max-device-width:768px){
+@media(max-device-width:800px){
     /* place nav items underneath brand */
     .navbar #con{
         flex-direction: row;
@@ -461,6 +500,18 @@ hr{
     .section1{
         width: 100%;
         height: 120vh;
+    }
+
+    .test-con2 .testimony:not(:last-child){
+        margin-bottom: 50px;
+    }
+
+    .test-con2 .testimony .testimonies{
+        width: 47%;
+    }
+
+    .test-con2{
+        flex-direction: column;
     }
 
     .test-con2 div .imgs{
@@ -503,6 +554,10 @@ hr{
         width: 60px;
         margin-bottom: -40px;
     }
+
+    .test-con2 .testimony .testimonies{
+        width: 85%;
+    }
 }
 
 /*  
@@ -510,7 +565,7 @@ hr{
 *************************** RESPONSIVENESS (320px)  ***************************** 
 ====================================================================================
 */
-@media(max-width:320px){
+@media(max-width:400px){
     /* shrunk everything */
     #summary, #skill{
         font-size: 0.7rem;
@@ -534,12 +589,15 @@ hr{
         max-width: 10vw;
     }
 
-    .test-con2 .testimony .testimonies p{
-        font-size: 10px;
+    .test-con2 .testimony .testimonies .con-testis p{
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
     }
 
-    .test-con2 .testimony .testimonies{
-    width: 60%;
+    .test-con2 .testimony   {
+        width: 80%;
+        margin: auto;
     }
 }
  /*  
