@@ -1,9 +1,9 @@
 
 // loader
-window.addEventListener('load', (event) => {
-    // alert('page is fully loaded');
-    document.getElementById("loader").style.display = "none"
-  });
+// window.addEventListener('load', (event) => {
+//     // alert('page is fully loaded');
+//     document.getElementById("loader").style.display = "none"
+//   });
 
 const navbar = document.querySelector(".navbar");
 const ham = document.querySelector(".ham");
